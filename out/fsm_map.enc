@@ -1,0 +1,1 @@
+restoreDesign [file dirname [file normalize [info script]]]/fsm_map.enc.dat fsm_map

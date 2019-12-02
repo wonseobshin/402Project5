@@ -1,0 +1,614 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 14.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+SGN Version : 10.10-p122 (27-Nov-2013) (64 bit executable)
+This Encounter release has been compiled with OA version 22.43-p033.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.13-s036_1 (64bit) 08/14/2014 18:19 (Linux 2.6)
+@(#)CDS: NanoRoute v14.13-s019 NR140805-0429/14_13-UB (database version 2.30, 237.6.1) {superthreading v1.19}
+@(#)CDS: CeltIC v14.13-s013_1 (64bit) 08/14/2014 12:47:36 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.13-s010 (64bit) 08/14/2014 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.13-s011_1 (64bit) Aug 14 2014 10:00:19 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.13-s029
+@(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v14.13-s036_1" on Sun Nov 24 16:31:03 2019 (mem=99.8M) ---
+--- Running on ssh-soc (x86_64 w/Linux 2.6.32-754.12.1.el6.x86_64) ---
+This version was compiled on Thu Aug 14 18:19:25 PDT 2014.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> win
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef}
+<CMD> set init_verilog fsm_map.v
+<CMD> set init_mmmc_file MMMC.tcl
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ...
+**ERROR: (ENCLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+**ERROR: (ENCLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+**ERROR: (ENCLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+**ERROR: (ENCLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+**ERROR: (ENCLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+**ERROR: (ENCLF-53):	The layer 'Metal1' referenced in pin 'CON' in macro 'ACHCONX2' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man ENCLF-53' for more detail.
+**ERROR: (ENCLF-3):	Error found when processing LEF file '/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Encounter' again.
+Type 'man ENCLF-3' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: **ERROR: (ENCSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Fix the errors, and restart again.
+
+<CMD> create_library_set -name lsMax \
+   -timing \
+    [list /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib ]
+<CMD> create_library_set -name lsMin \
+   -timing \
+    [list /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib ]
+<CMD> create_rc_corner -name rcWorst\
+   -qx_tech_file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch \
+   -preRoute_res 1\
+   -postRoute_res 1\
+   -preRoute_cap 1\
+   -postRoute_cap 1\
+   -postRoute_xcap 1\
+   -preRoute_clkres 0\
+   -preRoute_clkcap 0
+<CMD> create_rc_corner -name rcBest\
+   -qx_tech_file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch \
+   -preRoute_res 1\
+   -postRoute_res 1\
+   -preRoute_cap 1\
+   -postRoute_cap 1\
+   -postRoute_xcap 1\
+   -preRoute_clkres 0\
+   -preRoute_clkcap 0
+<CMD> create_delay_corner -name dc_lsMax_rcWorst\
+   -library_set lsMax\
+   -rc_corner   rcWorst
+<CMD> create_delay_corner -name dc_lsMin_rcBest\
+   -library_set lsMin\
+   -rc_corner   rcBest
+<CMD> create_constraint_mode -name cmFunc\
+   -sdc_files\
+    [list /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in/fsm_map.sdc]
+<CMD> create_analysis_view -name av_lsMax_rcWorst_cmFunc -constraint_mode cmFunc -delay_corner dc_lsMax_rcWorst
+<CMD> create_analysis_view -name av_lsMin_rcBest_cmFunc  -constraint_mode cmFunc -delay_corner dc_lsMin_rcBest
+<CMD> set_analysis_view -setup [list av_lsMax_rcWorst_cmFunc] -hold [list av_lsMin_rcBest_cmFunc]
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef}
+<CMD> set init_verilog fsm_map.v
+<CMD> set init_mmmc_file MMMC.tcl
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+**WARN: (ENCSE-100):	report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+INFO: New setup and hold views overwrite old settings during design initialization
+
+Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ...
+**WARN: (ENCLF-58):	MACRO 'ACHCONX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**ERROR: (ENCLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+**ERROR: (ENCLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+**ERROR: (ENCLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+**ERROR: (ENCLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+**ERROR: (ENCLF-328):	The layer 'Metal1' specified in macro pin 'ACHCONX2.CON' does not exist
+**WARN: (ENCLF-209):	Cell 'ACHCONX2' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ACHCONX2' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ACHCONX2' has been found in db, no extra pin 'CI' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ACHCONX2' has been found in db, no extra pin 'VSS' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ACHCONX2' has been found in db, no extra pin 'VDD' can be added for existing macro.
+**ERROR: (ENCLF-53):	The layer 'Metal1' referenced in pin 'VSS' in macro 'ADDFHX1' is not found in the database. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man ENCLF-53' for more detail.
+**ERROR: (ENCLF-3):	Error found when processing LEF file '/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef'. The subsequent file content is ignored. Refer to error messages above for details. Fix the errors, and restart 'Encounter' again.
+Type 'man ENCLF-3' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**WARN: (ENCLF-61):	1 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-61' for more detail.
+**ERROR: (ENCLF-26):	No technology information is defined in the first LEF file.
+Please rearrange the LEF file order and make sure the technology LEF file is the
+first one, exit and restart Encounter.
+**ERROR: **ERROR: (ENCSYT-16013):	Loading LEF file(s) failed, and has aborted. Refer to error messages above for details. Fix the errors, and restart again.
+
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef}
+<CMD> set init_verilog fsm_map.v
+<CMD> set init_mmmc_file MMMC.tcl
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+**WARN: (ENCSE-100):	report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+INFO: New setup and hold views overwrite old settings during design initialization
+
+Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef ...
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+
+Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ...
+**WARN: (ENCLF-58):	MACRO 'ACHCONX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-209):	Cell 'ACHCONX2' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ACHCONX2' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ACHCONX2' has been found in db, no extra pin 'CI' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ACHCONX2' has been found in db, no extra pin 'VSS' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ACHCONX2' has been found in db, no extra pin 'VDD' can be added for existing macro.
+**WARN: (ENCLF-58):	MACRO 'ADDFHX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-209):	Cell 'ADDFHX1' has been found in db, no extra pin 'VDD' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ADDFHX1' has been found in db, no extra pin 'CI' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ADDFHX1' has been found in db, no extra pin 'A' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ADDFHX1' has been found in db, no extra pin 'B' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ADDFHX1' has been found in db, no extra pin 'CO' can be added for existing macro.
+**WARN: (ENCLF-209):	Cell 'ADDFHX1' has been found in db, no extra pin 'S' can be added for existing macro.
+
+Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef ...
+**WARN: (ENCLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-61):	18 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-61' for more detail.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+
+viaInitial starts at Sun Nov 24 16:35:47 2019
+viaInitial ends at Sun Nov 24 16:35:47 2019
+*** Begin netlist parsing (mem=394.2M) ***
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'fsm_map.v'
+
+*** Memory Usage v#1 (Current mem = 394.160M, initial mem = 99.812M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=394.2M) ***
+Top level cell is fsm_final.
+Reading lsMax timing library '/ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CON' of cell 'ACHCONX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX2' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+No function defined for cell 'DECAP9'. The cell will only be used for analysis.
+No function defined for cell 'DECAP8'. The cell will only be used for analysis.
+No function defined for cell 'DECAP7'. The cell will only be used for analysis.
+No function defined for cell 'DECAP6'. The cell will only be used for analysis.
+No function defined for cell 'DECAP5'. The cell will only be used for analysis.
+No function defined for cell 'DECAP4'. The cell will only be used for analysis.
+No function defined for cell 'DECAP3'. The cell will only be used for analysis.
+No function defined for cell 'DECAP2'. The cell will only be used for analysis.
+No function defined for cell 'DECAP10'. The cell will only be used for analysis.
+No function defined for cell 'ANTENNA'. The cell will only be used for analysis.
+Read 489 cells in library 'slow_vdd1v0' 
+Reading lsMin timing library '/ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+No function defined for cell 'DECAP9'. The cell will only be used for analysis.
+No function defined for cell 'DECAP8'. The cell will only be used for analysis.
+No function defined for cell 'DECAP7'. The cell will only be used for analysis.
+No function defined for cell 'DECAP6'. The cell will only be used for analysis.
+No function defined for cell 'DECAP5'. The cell will only be used for analysis.
+No function defined for cell 'DECAP4'. The cell will only be used for analysis.
+No function defined for cell 'DECAP3'. The cell will only be used for analysis.
+No function defined for cell 'DECAP2'. The cell will only be used for analysis.
+No function defined for cell 'DECAP10'. The cell will only be used for analysis.
+No function defined for cell 'ANTENNA'. The cell will only be used for analysis.
+Read 489 cells in library 'fast_vdd1v0' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.84min, fe_real=4.87min, fe_mem=444.4M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell fsm_final ...
+*** Netlist is unique.
+Set DBUPerIGU to techSite CoreSite width 200.
+**WARN: (ENCTRN-1103):	Cell (0) ADDFHX1's height is less than placement-grid.
+**WARN: (ENCTRN-1103):	Cell (0) ADDFHX1's height is less than placement-grid.
+**WARN: (ENCTRN-1103):	Cell (0) ACHCONX2's height is less than placement-grid.
+**WARN: (ENCTRN-1103):	Cell (0) ACHCONX2's height is less than placement-grid.
+** info: there are 1073 modules.
+** info: there are 110 stdCell insts.
+Encounter terminated by internal (SEGV) error/signal...
+*** Stack trace:
+*** Stack trace:
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xb0367ff]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(syStackTrace+0x75)[0xb036933]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0x1e16f5a]
+/lib64/libpthread.so.0(+0xf7e0)[0x7fc4488577e0]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(_Z17sprMarkParEdgeEolP7dbsCellb+0xa7)[0x7a4f867]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(_Z23dbMergeCellLefPinAndOBSP7dbsCell+0xe9)[0x87261e9]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(_Z23sprAlwaysAugmentDbsCellP7dbsCell+0x1fd)[0x866f1fd]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0x8670288]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(_Z19dbSprUpdateInstanceP7dbsCellP7dbsInst+0xb6)[0x86706a6]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(_Z18dbSprInitPlacementv+0x118)[0x8670898]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(_Z16dbSprInitTopCellP7dbsCell+0xdd)[0x8670aad]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(_Z10sprInitSprP7dbsCell+0x43)[0x8670bb3]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0x1e60a30]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(TclInvokeStringCommand+0x7f)[0xcb30d2f]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb32091]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb784e2]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(TclObjInterpProcCore+0x10b)[0xcbb8d6b]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb32091]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb784e2]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(TclObjInterpProcCore+0x10b)[0xcbb8d6b]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb32091]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb784e2]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(TclObjInterpProcCore+0x10b)[0xcbb8d6b]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb32091]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb784e2]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(TclObjInterpProcCore+0x10b)[0xcbb8d6b]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb32091]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb784e2]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb802a1]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(TclEvalObjEx+0x85)[0xcb332d5]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb3e2c7]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb32091]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb32849]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcbad993]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0xcb3259e]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(Tcl_EvalEx+0x16)[0xcb32f76]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(Tcl_Eval+0x1d)[0xcb32f9d]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(_Z10qtfTclEvalPc+0x93)[0x8c1c9c3]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(_ZN8qtfsItem10fUpdateVarEv+0x516)[0x8bb3006]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(_ZN8qtfsItem11qt_metacallEN11QMetaObject4CallEiPPv+0x134)[0x8c80a44]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN11QMetaObject8activateEP7QObjectPKS_iPPv+0x2c7)[0x7fc444726477]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN15QAbstractButton7clickedEb+0x32)[0x7fc4453fefb2]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate11emitClickedEv+0x3b)[0x7fc44510f33b]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN22QAbstractButtonPrivate5clickEv+0x8b)[0x7fc44511071b]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent+0x8c)[0x7fc44511098c]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN7QWidget5eventEP6QEvent+0x9b9)[0x7fc444d7d289]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent+0xac)[0x7fc444d2c63c]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN12QApplication6notifyEP7QObjectP6QEvent+0xa01)[0x7fc444d2f241]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent+0x8c)[0x7fc44470d34c]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_Eb+0x19e)[0x7fc444d32bde]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN9QETWidget19translateMouseEventEPK7_XEvent+0x5cc)[0x7fc444dae54c]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN12QApplication15x11ProcessEventEP7_XEvent+0x72e)[0x7fc444dacf5e]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4(_ZN19QEventDispatcherX1113processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x157)[0x7fc444dd6a17]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x183)[0x7fc442a21f33]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x2f)[0x7fc44470f97f]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so(+0x1f2ec)[0x7fc442a222ec]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(Tcl_DoOneEvent+0xe2)[0xcbaa0a2]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so(_ZN17TqEventDispatcher13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE+0x7f)[0x7fc442a21e2f]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE+0x32)[0x7fc44470c122]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE+0xdc)[0x7fc44470c3fc]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4(_ZN16QCoreApplication4execEv+0xb9)[0x7fc44470f809]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so(_ZN13TqApplication4execEv+0xdf)[0x7fc442a2487f]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(_Z12edi_app_initP10Tcl_Interp+0x159)[0x1eb85c9]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(Tcl_Main+0x1d8)[0xcba20e8]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter(main+0x91)[0x1f96731]
+/lib64/libc.so.6(__libc_start_main+0x100)[0x7fc441060d20]
+/CMC/tools/cadence/EDI14.13.000_lnx86/tools/fe/bin/64bit/encounter[0x1e16089]
+========================================
+               pstack
+========================================
+Thread 7 (Thread 0x7fc43d813700 (LWP 43560)):
+#0  0x00007fc4411236a3 in select () from /lib64/libc.so.6
+#1  0x000000000cbdf0c0 in NotifierThreadProc ()
+#2  0x000000000de131a3 in create_head(void*) ()
+#3  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+Thread 6 (Thread 0x7fc43aa7b700 (LWP 43561)):
+#0  0x00007fc4410eecbd in nanosleep () from /lib64/libc.so.6
+#1  0x00007fc4410eeb30 in sleep () from /lib64/libc.so.6
+#2  0x000000000b054b55 in syiPeakMem(void*) ()
+#3  0x000000000de131a3 in create_head(void*) ()
+#4  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+Thread 5 (Thread 0x7fc439e79700 (LWP 43562)):
+#0  0x00007fc44885700d in nanosleep () from /lib64/libpthread.so.0
+#1  0x00000000033796da in rdaiLicRecheck(void*) ()
+#2  0x000000000de131a3 in create_head(void*) ()
+#3  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+Thread 4 (Thread 0x7fc4381da700 (LWP 43672)):
+#0  0x00007fc448857585 in sigwait () from /lib64/libpthread.so.0
+#1  0x0000000001e17b3b in ctrlCHandle(void*) ()
+#2  0x000000000de131a3 in create_head(void*) ()
+#3  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+Thread 3 (Thread 0x7fc42c849700 (LWP 43838)):
+#0  0x00007fc448856b2d in accept () from /lib64/libpthread.so.0
+#1  0x000000000d98a25d in ProcessInfo::handleConnection(void*) ()
+#2  0x000000000de131a3 in create_head(void*) ()
+#3  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+Thread 2 (Thread 0x7fc42be48700 (LWP 43839)):
+#0  0x00007fc4411236a3 in select () from /lib64/libc.so.6
+#1  0x000000000d9880ac in ProcessInfo::sampleUsage(void*) ()
+#2  0x000000000de131a3 in create_head(void*) ()
+#3  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+Thread 1 (Thread 0x7fc448c51f00 (LWP 43491)):
+#0  0x00007fc4410ee8dd in waitpid () from /lib64/libc.so.6
+#1  0x00007fc4410804e9 in do_system () from /lib64/libc.so.6
+#2  0x00007fc441080820 in system () from /lib64/libc.so.6
+#3  0x000000000b036857 in syStackTraceDump(_IO_FILE*, bool) ()
+#4  0x000000000b036933 in syStackTrace ()
+#5  0x0000000001e16f5a in rdaiErrorHandler(int, siginfo*, void*) ()
+#6  <signal handler called>
+#7  0x0000000007a4f867 in sprMarkParEdgeEol(dbsCell*, bool) ()
+#8  0x00000000087261e9 in dbMergeCellLefPinAndOBS(dbsCell*) ()
+#9  0x000000000866f1fd in sprAlwaysAugmentDbsCell(dbsCell*) ()
+#10 0x0000000008670288 in spriNewInstance(dbsCell*, dbsInst*) ()
+#11 0x00000000086706a6 in dbSprUpdateInstance(dbsCell*, dbsInst*) ()
+#12 0x0000000008670898 in dbSprInitPlacement() ()
+#13 0x0000000008670aad in dbSprInitTopCell(dbsCell*) ()
+#14 0x0000000008670bb3 in sprInitSpr(dbsCell*) ()
+#15 0x0000000001e60a30 in rdaiFlattenCmd ()
+#16 0x000000000cb30d2f in TclInvokeStringCommand ()
+#17 0x000000000cb32091 in TclEvalObjvInternal ()
+#18 0x000000000cb784e2 in TclExecuteByteCode ()
+#19 0x000000000cbb8d6b in TclObjInterpProcCore ()
+#20 0x000000000cb32091 in TclEvalObjvInternal ()
+#21 0x000000000cb784e2 in TclExecuteByteCode ()
+#22 0x000000000cbb8d6b in TclObjInterpProcCore ()
+#23 0x000000000cb32091 in TclEvalObjvInternal ()
+#24 0x000000000cb784e2 in TclExecuteByteCode ()
+#25 0x000000000cbb8d6b in TclObjInterpProcCore ()
+#26 0x000000000cb32091 in TclEvalObjvInternal ()
+#27 0x000000000cb784e2 in TclExecuteByteCode ()
+#28 0x000000000cbb8d6b in TclObjInterpProcCore ()
+#29 0x000000000cb32091 in TclEvalObjvInternal ()
+#30 0x000000000cb784e2 in TclExecuteByteCode ()
+#31 0x000000000cb802a1 in TclCompEvalObj ()
+#32 0x000000000cb332d5 in TclEvalObjEx ()
+#33 0x000000000cb3e2c7 in Tcl_CatchObjCmd ()
+#34 0x000000000cb32091 in TclEvalObjvInternal ()
+#35 0x000000000cb32849 in TclEvalEx ()
+#36 0x000000000cbad993 in TclSubstTokens ()
+#37 0x000000000cb3259e in TclEvalEx ()
+#38 0x000000000cb32f76 in Tcl_EvalEx ()
+#39 0x000000000cb32f9d in Tcl_Eval ()
+#40 0x0000000008c1c9c3 in qtfTclEval(char*) ()
+#41 0x0000000008bb3006 in qtfsItem::fUpdateVar() ()
+#42 0x0000000008c80a44 in qtfsItem::qt_metacall(QMetaObject::Call, int, void**) ()
+#43 0x00007fc444726477 in QMetaObject::activate(QObject*, QMetaObject const*, int, void**) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#44 0x00007fc4453fefb2 in QAbstractButton::clicked(bool) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#45 0x00007fc44510f33b in QAbstractButtonPrivate::emitClicked() () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#46 0x00007fc44511071b in QAbstractButtonPrivate::click() () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#47 0x00007fc44511098c in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#48 0x00007fc444d7d289 in QWidget::event(QEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#49 0x00007fc444d2c63c in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#50 0x00007fc444d2f241 in QApplication::notify(QObject*, QEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#51 0x00007fc44470d34c in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#52 0x00007fc444d32bde in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#53 0x00007fc444dae54c in QETWidget::translateMouseEvent(_XEvent const*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#54 0x00007fc444dacf5e in QApplication::x11ProcessEvent(_XEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#55 0x00007fc444dd6a17 in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#56 0x00007fc442a21f33 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so
+#57 0x00007fc44470f97f in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#58 0x00007fc442a222ec in tcl_dispatch_qt () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so
+#59 0x000000000cbaa0a2 in Tcl_DoOneEvent ()
+#60 0x00007fc442a21e2f in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so
+#61 0x00007fc44470c122 in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#62 0x00007fc44470c3fc in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#63 0x00007fc44470f809 in QCoreApplication::exec() () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#64 0x00007fc442a2487f in TqApplication::exec() () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so
+#65 0x0000000001eb85c9 in edi_app_init(Tcl_Interp*) ()
+#66 0x000000000cba20e8 in Tcl_Main ()
+#67 0x0000000001f96731 in main ()
+========================================
+                gdb
+========================================
+Using: gdb
+[New LWP 43839]
+[New LWP 43838]
+[New LWP 43672]
+[New LWP 43562]
+[New LWP 43561]
+[New LWP 43560]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib64/libthread_db.so.1".
+0x00007fc4410ee8dd in waitpid () from /lib64/libc.so.6
+
+Thread 7 (Thread 0x7fc43d813700 (LWP 43560)):
+#0  0x00007fc4411236a3 in select () from /lib64/libc.so.6
+#1  0x000000000cbdf0c0 in NotifierThreadProc ()
+#2  0x000000000de131a3 in create_head(void*) ()
+#3  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+
+Thread 6 (Thread 0x7fc43aa7b700 (LWP 43561)):
+#0  0x00007fc4410eecbd in nanosleep () from /lib64/libc.so.6
+#1  0x00007fc4410eeb30 in sleep () from /lib64/libc.so.6
+#2  0x000000000b054b55 in syiPeakMem(void*) ()
+#3  0x000000000de131a3 in create_head(void*) ()
+#4  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#5  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+
+Thread 5 (Thread 0x7fc439e79700 (LWP 43562)):
+#0  0x00007fc44885700d in nanosleep () from /lib64/libpthread.so.0
+#1  0x00000000033796da in rdaiLicRecheck(void*) ()
+#2  0x000000000de131a3 in create_head(void*) ()
+#3  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+
+Thread 4 (Thread 0x7fc4381da700 (LWP 43672)):
+#0  0x00007fc448857585 in sigwait () from /lib64/libpthread.so.0
+#1  0x0000000001e17b3b in ctrlCHandle(void*) ()
+#2  0x000000000de131a3 in create_head(void*) ()
+#3  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+
+Thread 3 (Thread 0x7fc42c849700 (LWP 43838)):
+#0  0x00007fc448856b2d in accept () from /lib64/libpthread.so.0
+#1  0x000000000d98a25d in ProcessInfo::handleConnection(void*) ()
+#2  0x000000000de131a3 in create_head(void*) ()
+#3  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+
+Thread 2 (Thread 0x7fc42be48700 (LWP 43839)):
+#0  0x00007fc4411236a3 in select () from /lib64/libc.so.6
+#1  0x000000000d9880ac in ProcessInfo::sampleUsage(void*) ()
+#2  0x000000000de131a3 in create_head(void*) ()
+#3  0x00007fc44884faa1 in start_thread () from /lib64/libpthread.so.0
+#4  0x00007fc44112ac4d in clone () from /lib64/libc.so.6
+
+Thread 1 (Thread 0x7fc448c51f00 (LWP 43491)):
+#0  0x00007fc4410ee8dd in waitpid () from /lib64/libc.so.6
+#1  0x00007fc4410804e9 in do_system () from /lib64/libc.so.6
+#2  0x00007fc441080820 in system () from /lib64/libc.so.6
+#3  0x000000000b036857 in syStackTraceDump(_IO_FILE*, bool) ()
+#4  0x000000000b036933 in syStackTrace ()
+#5  0x0000000001e16f5a in rdaiErrorHandler(int, siginfo*, void*) ()
+#6  <signal handler called>
+#7  0x0000000007a4f867 in sprMarkParEdgeEol(dbsCell*, bool) ()
+#8  0x00000000087261e9 in dbMergeCellLefPinAndOBS(dbsCell*) ()
+#9  0x000000000866f1fd in sprAlwaysAugmentDbsCell(dbsCell*) ()
+#10 0x0000000008670288 in spriNewInstance(dbsCell*, dbsInst*) ()
+#11 0x00000000086706a6 in dbSprUpdateInstance(dbsCell*, dbsInst*) ()
+#12 0x0000000008670898 in dbSprInitPlacement() ()
+#13 0x0000000008670aad in dbSprInitTopCell(dbsCell*) ()
+#14 0x0000000008670bb3 in sprInitSpr(dbsCell*) ()
+#15 0x0000000001e60a30 in rdaiFlattenCmd ()
+#16 0x000000000cb30d2f in TclInvokeStringCommand ()
+#17 0x000000000cb32091 in TclEvalObjvInternal ()
+#18 0x000000000cb784e2 in TclExecuteByteCode ()
+#19 0x000000000cbb8d6b in TclObjInterpProcCore ()
+#20 0x000000000cb32091 in TclEvalObjvInternal ()
+#21 0x000000000cb784e2 in TclExecuteByteCode ()
+#22 0x000000000cbb8d6b in TclObjInterpProcCore ()
+#23 0x000000000cb32091 in TclEvalObjvInternal ()
+#24 0x000000000cb784e2 in TclExecuteByteCode ()
+#25 0x000000000cbb8d6b in TclObjInterpProcCore ()
+#26 0x000000000cb32091 in TclEvalObjvInternal ()
+#27 0x000000000cb784e2 in TclExecuteByteCode ()
+#28 0x000000000cbb8d6b in TclObjInterpProcCore ()
+#29 0x000000000cb32091 in TclEvalObjvInternal ()
+#30 0x000000000cb784e2 in TclExecuteByteCode ()
+#31 0x000000000cb802a1 in TclCompEvalObj ()
+#32 0x000000000cb332d5 in TclEvalObjEx ()
+#33 0x000000000cb3e2c7 in Tcl_CatchObjCmd ()
+#34 0x000000000cb32091 in TclEvalObjvInternal ()
+#35 0x000000000cb32849 in TclEvalEx ()
+#36 0x000000000cbad993 in TclSubstTokens ()
+#37 0x000000000cb3259e in TclEvalEx ()
+#38 0x000000000cb32f76 in Tcl_EvalEx ()
+#39 0x000000000cb32f9d in Tcl_Eval ()
+#40 0x0000000008c1c9c3 in qtfTclEval(char*) ()
+#41 0x0000000008bb3006 in qtfsItem::fUpdateVar() ()
+#42 0x0000000008c80a44 in qtfsItem::qt_metacall(QMetaObject::Call, int, void**) ()
+#43 0x00007fc444726477 in QMetaObject::activate(QObject*, QMetaObject const*, int, void**) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#44 0x00007fc4453fefb2 in QAbstractButton::clicked(bool) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#45 0x00007fc44510f33b in QAbstractButtonPrivate::emitClicked() () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#46 0x00007fc44511071b in QAbstractButtonPrivate::click() () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#47 0x00007fc44511098c in QAbstractButton::mouseReleaseEvent(QMouseEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#48 0x00007fc444d7d289 in QWidget::event(QEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#49 0x00007fc444d2c63c in QApplicationPrivate::notify_helper(QObject*, QEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#50 0x00007fc444d2f241 in QApplication::notify(QObject*, QEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#51 0x00007fc44470d34c in QCoreApplication::notifyInternal(QObject*, QEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#52 0x00007fc444d32bde in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#53 0x00007fc444dae54c in QETWidget::translateMouseEvent(_XEvent const*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#54 0x00007fc444dacf5e in QApplication::x11ProcessEvent(_XEvent*) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#55 0x00007fc444dd6a17 in QEventDispatcherX11::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtGui.so.4
+#56 0x00007fc442a21f33 in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so
+#57 0x00007fc44470f97f in QCoreApplication::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#58 0x00007fc442a222ec in tcl_dispatch_qt () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so
+#59 0x000000000cbaa0a2 in Tcl_DoOneEvent ()
+#60 0x00007fc442a21e2f in TqEventDispatcher::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so
+#61 0x00007fc44470c122 in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#62 0x00007fc44470c3fc in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#63 0x00007fc44470f809 in QCoreApplication::exec() () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/Qt/64bit/lib/libQtCore.so.4
+#64 0x00007fc442a2487f in TqApplication::exec() () from /CMC/tools/cadence/EDI14.13.000_lnx86/tools/lib/64bit/libtq.so
+#65 0x0000000001eb85c9 in edi_app_init(Tcl_Interp*) ()
+#66 0x000000000cba20e8 in Tcl_Main ()
+#67 0x0000000001f96731 in main ()
+A debugging session is active.
+
+	Inferior 1 [process 43491] will be detached.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]

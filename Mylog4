@@ -1,0 +1,455 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 14.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+SGN Version : 10.10-p122 (27-Nov-2013) (64 bit executable)
+This Encounter release has been compiled with OA version 22.43-p033.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.13-s036_1 (64bit) 08/14/2014 18:19 (Linux 2.6)
+@(#)CDS: NanoRoute v14.13-s019 NR140805-0429/14_13-UB (database version 2.30, 237.6.1) {superthreading v1.19}
+@(#)CDS: CeltIC v14.13-s013_1 (64bit) 08/14/2014 12:47:36 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.13-s010 (64bit) 08/14/2014 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.13-s011_1 (64bit) Aug 14 2014 10:00:19 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.13-s029
+@(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v14.13-s036_1" on Sun Dec  1 17:20:40 2019 (mem=97.8M) ---
+--- Running on ssh-soc (x86_64 w/Linux 2.6.32-754.12.1.el6.x86_64) ---
+This version was compiled on Thu Aug 14 18:19:25 PDT 2014.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> win
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> win
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef}
+<CMD> set init_verilog in/fsm_map.v
+<CMD> set init_mmmc_file in/MMMC.tcl
+<CMD> set init_top_cell fsm_map
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef ...
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+
+Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ...
+Set DBUPerIGU to M2 pitch 200.
+
+Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef ...
+**WARN: (ENCLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-61):	16 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-61' for more detail.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+
+viaInitial starts at Sun Dec  1 17:21:13 2019
+viaInitial ends at Sun Dec  1 17:21:13 2019
+*** Begin netlist parsing (mem=366.0M) ***
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'in/fsm_map.v'
+
+*** Memory Usage v#1 (Current mem = 366.035M, initial mem = 97.812M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=366.0M) ***
+Set top cell to fsm_map.
+Reading lsMax timing library '/ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CON' of cell 'ACHCONX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX2' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+No function defined for cell 'DECAP9'. The cell will only be used for analysis.
+No function defined for cell 'DECAP8'. The cell will only be used for analysis.
+No function defined for cell 'DECAP7'. The cell will only be used for analysis.
+No function defined for cell 'DECAP6'. The cell will only be used for analysis.
+No function defined for cell 'DECAP5'. The cell will only be used for analysis.
+No function defined for cell 'DECAP4'. The cell will only be used for analysis.
+No function defined for cell 'DECAP3'. The cell will only be used for analysis.
+No function defined for cell 'DECAP2'. The cell will only be used for analysis.
+No function defined for cell 'DECAP10'. The cell will only be used for analysis.
+No function defined for cell 'ANTENNA'. The cell will only be used for analysis.
+Read 489 cells in library 'slow_vdd1v0' 
+Reading lsMin timing library '/ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+No function defined for cell 'DECAP9'. The cell will only be used for analysis.
+No function defined for cell 'DECAP8'. The cell will only be used for analysis.
+No function defined for cell 'DECAP7'. The cell will only be used for analysis.
+No function defined for cell 'DECAP6'. The cell will only be used for analysis.
+No function defined for cell 'DECAP5'. The cell will only be used for analysis.
+No function defined for cell 'DECAP4'. The cell will only be used for analysis.
+No function defined for cell 'DECAP3'. The cell will only be used for analysis.
+No function defined for cell 'DECAP2'. The cell will only be used for analysis.
+No function defined for cell 'DECAP10'. The cell will only be used for analysis.
+No function defined for cell 'ANTENNA'. The cell will only be used for analysis.
+Read 489 cells in library 'fast_vdd1v0' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.11min, fe_real=0.68min, fe_mem=425.2M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell fsm_map ...
+*** Netlist is unique.
+** info: there are 1073 modules.
+** info: there are 110 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 433.797M, initial mem = 97.812M) ***
+**WARN: (ENCFP-3961):	The techSite 'CornerSite' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist  in  the LEF library. Check and correct the LEF file.
+**WARN: (ENCFP-3961):	The techSite 'IOSite' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist  in  the LEF library. Check and correct the LEF file.
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+av_lsMin_rcBest_cmFunc av_lsMax_rcWorst_cmFunc
+av_lsMin_rcBest_cmFunc av_lsMax_rcWorst_cmFunc
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Importing multi-corner technology file(s) for preRoute extraction...
+/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch
+Completed (cpu: 0:00:05.2)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: av_lsMax_rcWorst_cmFunc
+    RC-Corner Name        : rcWorst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch'
+ 
+ Analysis View: av_lsMin_rcBest_cmFunc
+    RC-Corner Name        : rcBest
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch'
+Technology file '/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch' associated with first view 'av_lsMax_rcWorst_cmFunc' specified to command 'set_analysis_view' will be used as the primary corner for the multi-corner extraction. TQRC/IQRC extraction leverages a single primary corner extraction, then derives the other corners based on their technology files and operating conditions from the primary corner.
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+*Info: initialize multi-corner CTS.
+CTE reading timing constraint file '/ubc/ece/home/ss/grads/cyuan/elec402/tutorial4/PnR/in/up_counter_map.sdc' ...
+Current (total cpu=0:00:12.2, real=0:00:49.0, peak res=455.0M, current mem=635.6M)
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'up_counter' (File /ubc/ece/home/ss/grads/cyuan/elec402/tutorial4/PnR/in/up_counter_map.sdc, Line 13).
+
+**ERROR: (TCLCMD-917):	Cannot find 'designs' that match 'up_counter' (File /ubc/ece/home/ss/grads/cyuan/elec402/tutorial4/PnR/in/up_counter_map.sdc, Line 13).
+
+INFO (CTE): read_dc_script finished with 1 WARNING and 1 ERROR.
+WARNING (CTE-25): Line: 9, 10 of File /ubc/ece/home/ss/grads/cyuan/elec402/tutorial4/PnR/in/up_counter_map.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=461.5M, current mem=637.6M)
+Current (total cpu=0:00:12.3, real=0:00:49.0, peak res=461.5M, current mem=637.6M)
+Total number of combinational cells: 324
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+av_lsMin_rcBest_cmFunc av_lsMax_rcWorst_cmFunc
+av_lsMin_rcBest_cmFunc av_lsMax_rcWorst_cmFunc
+av_lsMin_rcBest_cmFunc av_lsMax_rcWorst_cmFunc
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCLF-58            16  MACRO '%s' has been found in the databas...
+WARNING   ENCLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   ENCLF-155            6  ViaRule only supports routing/cut layer,...
+WARNING   ENCLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   ENCFP-3961           2  The techSite '%s' has no related cells i...
+*** Message Summary: 26 warning(s), 0 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.758795562599 0.499887 3 3 3 3
+Adjusting Core to Bottom to: 3.0400.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> set sprCreateIeRingNets {}
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingWidth 1.0
+<CMD> set sprCreateIeRingSpacing 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -type core_rings -jog_distance 0.6 -threshold 0.6 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer {bottom Metal1 top Metal1 right Metal2 left Metal2} -width 1 -spacing 0.25 -offset 0.6
+**WARN: (ENCPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_top_layer layerName"..
+**WARN: (ENCPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddRingMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddRingMode -stacked_via_bottom_layer layerName"..
+
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 641.6M) ***
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1 Metal11 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1 Metal11 } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1 Metal11 }
+*** Begin SPECIAL ROUTE on Sun Dec  1 17:21:23 2019 ***
+SPECIAL ROUTE ran on directory: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR
+SPECIAL ROUTE ran on machine: ssh-soc (Linux 2.6.32-754.12.1.el6.x86_64 Xeon 2.19Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 11
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 11
+srouteTopTargetLayerLimit set to 11
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1181.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (ENCSR-4302):	Cap-table is found in the design, so the same information from LEF will be ignored.
+Read in 36 layers, 11 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 583 macros, 29 used
+Read in 29 components
+  29 core components: 29 unplaced, 0 placed, 0 fixed
+Read in 14 logical pins
+Read in 14 nets
+Read in 2 special nets, 2 routed
+2 nets selected.
+
+Begin power routing ...
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VDD.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VSS.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 22
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 11
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1183.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 121 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Sun Dec  1 17:21:23 2019
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Sun Dec  1 17:21:23 2019
+
+sroute post-processing starts at Sun Dec  1 17:21:23 2019
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Sun Dec  1 17:21:23 2019
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 0.00 megs
+sroute: Total Peak Memory used = 637.56 megs
+<CMD> addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.2 -xleft_offset 13 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 0.22 -nets {VDD VSS} -stacked_via_bottom_layer Metal1
+**WARN: (ENCPP-4022):	Option "-stacked_via_top_layer" is obsolete and has been replaced by "setAddStripeMode -stacked_via_top_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddStripeMode -stacked_via_top_layer layerName"..
+**WARN: (ENCPP-4022):	Option "-stacked_via_bottom_layer" is obsolete and has been replaced by "setAddStripeMode -stacked_via_bottom_layer". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "setAddStripeMode -stacked_via_bottom_layer layerName"..
+
+**WARN: (ENCPP-193):	The currently specified  spacing 0.2000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer Metal2 is 0.0550. If violation happens, increase the spacing to around 0.2845. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+Stripe generation is complete; vias are now being generated.
+The power planner created 2 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 637.6M) ***
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+<CMD> setNanoRouteMode -quiet -droutePostRouteWidenWireRule LEFSpecialRouteSpec
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -inPlaceOpt
+**WARN: the option '-inPlaceOpt' will become obsolete in the next major release. Instead use the following mode  'setOptMode -allEndPoints true' and run regular placeDesign followed by optDesign -preCts. The obsolete option still works in this release, but to avoid this warning and to ensure the compatibility with future relases, update your script to use the recommended setting.
+**WARN: the option '-inPlaceOpt' will become obsolete in the next major release. Instead use the following mode  'setOptMode -allEndPoints true' and run regular placeDesign followed by optDesign -preCts. The obsolete option still works in this release, but to avoid this warning and to ensure the compatibility with future relases, update your script to use the recommended setting.
+*** Starting placeDesign concurrent flow ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (ENCDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.22558 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 657.1M, InitMEM = 657.1M)
+ AAE_INFO: Swapping Delay calculation library interface data to disk.
+*** Memory pool thread-safe mode activated.
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=714.387 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 714.4M) ***
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+Updating netlist
+
+*summary: 2 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+*** Starting "NanoPlace(TM) placement v#1 (mem=706.3M)" ...
+**WARN: (ENCTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+Type 'man ENCTS-403' for more detail.
+**INFO (INTERRUPT): The current script will stop before next command.
+**INFO (INTERRUPT): One more Ctrl-C to exit Encounter ...
+Encounter terminated by user interrupt.

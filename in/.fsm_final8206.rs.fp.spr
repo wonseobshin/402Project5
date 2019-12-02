@@ -1,0 +1,43 @@
+Version 4.1
+Micron 1000
+LAYERS 36
+Poly
+Metal1
+Metal2
+Metal3
+Metal4
+Metal5
+Metal6
+Metal7
+Metal8
+Metal9
+Metal10
+Metal11
+Cont
+Via1
+Via2
+Via3
+Via4
+Via5
+Via6
+Via7
+Via8
+Via9
+Via10
+Bondpad
+OVERLAP
+PWdummy
+Nwell
+Oxide
+Nhvt
+Nimp
+Phvt
+Pimp
+Nzvt
+Nlvt
+Plvt
+SiProt
+VIAS 0
+SPECIALNETS
+0 0 1 VSS
+0 0 1 VDD

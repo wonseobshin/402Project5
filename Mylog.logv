@@ -1,0 +1,614 @@
+Checking out Encounter license ...
+[12/01 16:44:16     0s] Virtuoso_Digital_Implem 14.1 license checkout succeeded.
+[12/01 16:44:18     0s] 	Maximum number of instance allowed (1 x 50000).
+[12/01 16:44:18     0s] SGN Version : 10.10-p122 (27-Nov-2013) (64 bit executable)
+[12/01 16:44:18     0s] This Encounter release has been compiled with OA version 22.43-p033.
+[12/01 16:44:19     0s] 
+[12/01 16:44:20     1s] *******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+[12/01 16:44:22     2s] @(#)CDS: Encounter v14.13-s036_1 (64bit) 08/14/2014 18:19 (Linux 2.6)
+[12/01 16:44:22     2s] @(#)CDS: NanoRoute v14.13-s019 NR140805-0429/14_13-UB (database version 2.30, 237.6.1) {superthreading v1.19}
+[12/01 16:44:22     2s] @(#)CDS: CeltIC v14.13-s013_1 (64bit) 08/14/2014 12:47:36 (Linux 2.6.18-194.el5)
+[12/01 16:44:22     2s] @(#)CDS: AAE 14.13-s010 (64bit) 08/14/2014 (Linux 2.6.18-194.el5)
+[12/01 16:44:22     2s] @(#)CDS: CTE 14.13-s011_1 (64bit) Aug 14 2014 10:00:19 (Linux 2.6.18-194.el5)
+[12/01 16:44:22     2s] @(#)CDS: CPE v14.13-s029
+[12/01 16:44:22     2s] @(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+[12/01 16:44:22     2s] --- Starting "Encounter v14.13-s036_1" on Sun Dec  1 16:44:22 2019 (mem=96.8M) ---
+[12/01 16:44:22     2s] --- Running on ssh-soc (x86_64 w/Linux 2.6.32-754.12.1.el6.x86_64) ---
+[12/01 16:44:22     2s] This version was compiled on Thu Aug 14 18:19:25 PDT 2014.
+[12/01 16:44:22     2s] Set DBUPerIGU to 1000.
+[12/01 16:44:22     2s] Set net toggle Scale Factor to 1.00
+[12/01 16:44:22     2s] Set Shrink Factor to 1.00000
+[12/01 16:44:22     2s] 
+[12/01 16:44:22     3s] **INFO:  MMMC transition support version v31-84 
+[12/01 16:44:22     3s] 
+[12/01 16:44:22     3s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/01 16:44:22     3s] <CMD> suppressMessage ENCEXT-2799
+[12/01 16:44:22     3s] <CMD> getVersion
+[12/01 16:44:22     3s] <CMD> win
+[12/01 16:44:23     3s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/01 16:45:46     6s] <CMD> suppressMessage ENCEXT-2799
+[12/01 16:45:46     6s] <CMD> getVersion
+[12/01 16:45:46     6s] <CMD> win
+[12/01 16:45:46     6s] <CMD> set init_gnd_net VSS
+[12/01 16:45:46     7s] <CMD> set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef}
+[12/01 16:45:46     7s] <CMD> set init_verilog in/up_counter_map.sv
+[12/01 16:45:46     7s] <CMD> set init_mmmc_file in/MMMC.tcl
+[12/01 16:45:46     7s] <CMD> set init_top_cell up_counter
+[12/01 16:45:46     7s] <CMD> set init_pwr_net VDD
+[12/01 16:45:46     7s] <CMD> init_design
+[12/01 16:45:46     7s] 
+[12/01 16:45:46     7s] Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef ...
+[12/01 16:45:46     7s] **WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+[12/01 16:45:46     7s] **WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+[12/01 16:45:46     7s] **WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+[12/01 16:45:46     7s] **WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+[12/01 16:45:46     7s] **WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+[12/01 16:45:46     7s] **WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+[12/01 16:45:46     7s] 
+[12/01 16:45:46     7s] Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ...
+[12/01 16:45:46     7s] Set DBUPerIGU to M2 pitch 200.
+[12/01 16:45:46     7s] 
+[12/01 16:45:46     7s] Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef ...
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-58' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-61):	16 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[12/01 16:45:46     7s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:45:46     7s] Type 'man ENCLF-61' for more detail.
+[12/01 16:45:46     7s] **WARN: (ENCLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/01 16:45:46     7s] Type 'man ENCLF-200' for more detail.
+[12/01 16:45:46     7s] 
+[12/01 16:45:46     7s] viaInitial starts at Sun Dec  1 16:45:46 2019
+viaInitial ends at Sun Dec  1 16:45:46 2019
+**ERROR: (ENCSYT-16038):	The specified file 'in/up_counter_map.sv' could not be found. Check your file system, correct the file name.
+[12/01 16:45:46     7s] **ERROR: (ENCIMEX-7008):	No netlist files are found.
+[12/01 16:45:46     7s] 
+[12/01 16:45:46     7s] {DETAILMESSAGE}
+[12/01 16:45:46     7s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/01 16:46:17     8s] <CMD> suppressMessage ENCEXT-2799
+[12/01 16:46:17     8s] <CMD> getVersion
+[12/01 16:46:17     8s] <CMD> win
+[12/01 16:46:17     8s] <CMD> set init_gnd_net VSS
+[12/01 16:46:17     8s] <CMD> set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef}
+[12/01 16:46:17     8s] <CMD> set init_verilog in/fsm_map.sv
+[12/01 16:46:17     8s] <CMD> set init_mmmc_file in/MMMC.tcl
+[12/01 16:46:17     8s] <CMD> set init_top_cell up_counter
+[12/01 16:46:17     8s] <CMD> set init_pwr_net VDD
+[12/01 16:46:17     8s] <CMD> init_design
+[12/01 16:46:17     8s] **WARN: (ENCSE-100):	report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[12/01 16:46:17     8s] INFO: New setup and hold views overwrite old settings during design initialization
+[12/01 16:46:17     8s] 
+[12/01 16:46:17     8s] Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef ...
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'OVERLAP' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'PWdummy' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Nwell' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Oxide' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Nhvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Nimp' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Phvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Pimp' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Nzvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Nlvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Plvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'SiProt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Poly' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Cont' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Via1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Via2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-119):	LAYER 'Via3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-119' for more detail.
+[12/01 16:46:17     8s] **WARN: (EMS-63):	Message <ENCLF-119> has exceeded the default message display limit of 20.
+[12/01 16:46:17     8s] To avoid this warning, increase the display limit per unique message
+[12/01 16:46:17     8s] by using the setMessageLimit <number> command.
+[12/01 16:46:17     8s] The message limit can be removed by using the unsetMessageLimit command.
+[12/01 16:46:17     8s] Note that setting a very large number using the setMessageLimit command
+[12/01 16:46:17     8s] or removing the message limit using the unsetMessageLimit command can
+[12/01 16:46:17     8s] significantly increase the log file size.
+[12/01 16:46:17     8s] To suppress a message, use the suppressMessage command.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M11_M10' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M10_M9' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M9_M8' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M8_M7' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M7_M6' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M6_M5' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M5_M4' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M4_M3' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M3_M2' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M2_M1' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M1_PO' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M1_DIFF' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M1_PSUB' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M1_PIMP' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M1_NIMP' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-151):	The viaRule 'M1_NWELL' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_HV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_VV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_VH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_HH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_2x1_HV_E' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_2x1_HV_W' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_1x2_HV_N' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_1x2_HV_S' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_VH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_HH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_HV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_VV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_M_NH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_M_SH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_2x1_VH_E' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_2x1_VH_W' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_1x2_VH_N' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_1x2_VH_S' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M4_M3_HV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCLF-223):	The LEF via 'M4_M3_VV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-223' for more detail.
+[12/01 16:46:17     8s] **WARN: (EMS-63):	Message <ENCLF-223> has exceeded the default message display limit of 20.
+[12/01 16:46:17     8s] To avoid this warning, increase the display limit per unique message
+[12/01 16:46:17     8s] by using the setMessageLimit <number> command.
+[12/01 16:46:17     8s] The message limit can be removed by using the unsetMessageLimit command.
+[12/01 16:46:17     8s] Note that setting a very large number using the setMessageLimit command
+[12/01 16:46:17     8s] or removing the message limit using the unsetMessageLimit command can
+[12/01 16:46:17     8s] significantly increase the log file size.
+[12/01 16:46:17     8s] To suppress a message, use the suppressMessage command.
+[12/01 16:46:17     8s] **WARN: (ENCLF-162):	The nonDefaultRule 'LEFSpecialRouteSpec' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] **WARN: (ENCLF-162):	The nonDefaultRule 'VLMDefaultSetup' has been defined, the content will be skipped.
+[12/01 16:46:17     8s] 
+[12/01 16:46:17     8s] Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ...
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ACHCONX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDFHX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDFHX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDFHX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDFHXL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDFX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDFX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDFX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDFXL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDHX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDHX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDHX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'ADDHXL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'AND2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'AND2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'AND2X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'AND2X6' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'AND2X8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'AND2XL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (ENCLF-58):	MACRO 'AND3X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-58' for more detail.
+[12/01 16:46:17     8s] **WARN: (EMS-63):	Message <ENCLF-58> has exceeded the default message display limit of 20.
+[12/01 16:46:17     8s] To avoid this warning, increase the display limit per unique message
+[12/01 16:46:17     8s] by using the setMessageLimit <number> command.
+[12/01 16:46:17     8s] The message limit can be removed by using the unsetMessageLimit command.
+[12/01 16:46:17     8s] Note that setting a very large number using the setMessageLimit command
+[12/01 16:46:17     8s] or removing the message limit using the unsetMessageLimit command can
+[12/01 16:46:17     8s] significantly increase the log file size.
+[12/01 16:46:17     8s] To suppress a message, use the suppressMessage command.
+[12/01 16:46:17     8s] 
+[12/01 16:46:17     8s] Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef ...
+[12/01 16:46:17     8s] **WARN: (ENCLF-61):	599 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[12/01 16:46:17     8s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:46:17     8s] Type 'man ENCLF-61' for more detail.
+[12/01 16:46:17     8s] **ERROR: (ENCSYT-16038):	The specified file 'in/fsm_map.sv' could not be found. Check your file system, correct the file name.
+[12/01 16:46:17     8s] **ERROR: (ENCIMEX-7008):	No netlist files are found.
+[12/01 16:46:17     8s] 
+[12/01 16:46:17     8s] {DETAILMESSAGE}
+[12/01 16:46:17     8s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/01 16:48:27    14s] <CMD> suppressMessage ENCEXT-2799
+[12/01 16:48:27    14s] <CMD> getVersion
+[12/01 16:48:27    14s] <CMD> win
+[12/01 16:48:27    14s] <CMD> set init_gnd_net VSS
+[12/01 16:48:27    14s] <CMD> set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef}
+[12/01 16:48:27    14s] <CMD> set init_verilog in/fsm_map.v
+[12/01 16:48:27    14s] <CMD> set init_mmmc_file in/MMMC.tcl
+[12/01 16:48:27    14s] <CMD> set init_top_cell fsm_map
+[12/01 16:48:27    14s] <CMD> set init_pwr_net VDD
+[12/01 16:48:27    14s] <CMD> init_design
+[12/01 16:48:27    14s] **WARN: (ENCSE-100):	report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[12/01 16:48:27    14s] INFO: New setup and hold views overwrite old settings during design initialization
+[12/01 16:48:27    14s] 
+[12/01 16:48:27    14s] Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef ...
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'OVERLAP' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'PWdummy' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Nwell' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Oxide' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Nhvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Nimp' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Phvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Pimp' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Nzvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Nlvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Plvt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'SiProt' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Poly' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Cont' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Via1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Via2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-119):	LAYER 'Via3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-119' for more detail.
+[12/01 16:48:27    14s] **WARN: (EMS-63):	Message <ENCLF-119> has exceeded the default message display limit of 20.
+[12/01 16:48:27    14s] To avoid this warning, increase the display limit per unique message
+[12/01 16:48:27    14s] by using the setMessageLimit <number> command.
+[12/01 16:48:27    14s] The message limit can be removed by using the unsetMessageLimit command.
+[12/01 16:48:27    14s] Note that setting a very large number using the setMessageLimit command
+[12/01 16:48:27    14s] or removing the message limit using the unsetMessageLimit command can
+[12/01 16:48:27    14s] significantly increase the log file size.
+[12/01 16:48:27    14s] To suppress a message, use the suppressMessage command.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M11_M10' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M10_M9' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M9_M8' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M8_M7' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M7_M6' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M6_M5' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M5_M4' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M4_M3' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M3_M2' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M2_M1' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M1_PO' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M1_DIFF' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M1_PSUB' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M1_PIMP' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M1_NIMP' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-151):	The viaRule 'M1_NWELL' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_HV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_VV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_VH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_HH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_2x1_HV_E' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_2x1_HV_W' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_1x2_HV_N' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M2_M1_1x2_HV_S' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_VH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_HH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_HV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_VV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_M_NH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_M_SH' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_2x1_VH_E' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_2x1_VH_W' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_1x2_VH_N' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M3_M2_1x2_VH_S' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M4_M3_HV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **ERROR: (ENCLF-223):	The LEF via 'M4_M3_VV' has been defined and found in the database. The current definition will be ignored. Review the LEF files to ensure that you have not specified duplicate LEF files, or LEF files with duplicate VIA definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-223' for more detail.
+[12/01 16:48:27    14s] **WARN: (EMS-63):	Message <ENCLF-223> has exceeded the default message display limit of 20.
+[12/01 16:48:27    14s] To avoid this warning, increase the display limit per unique message
+[12/01 16:48:27    14s] by using the setMessageLimit <number> command.
+[12/01 16:48:27    14s] The message limit can be removed by using the unsetMessageLimit command.
+[12/01 16:48:27    14s] Note that setting a very large number using the setMessageLimit command
+[12/01 16:48:27    14s] or removing the message limit using the unsetMessageLimit command can
+[12/01 16:48:27    14s] significantly increase the log file size.
+[12/01 16:48:27    14s] To suppress a message, use the suppressMessage command.
+[12/01 16:48:27    14s] **WARN: (ENCLF-162):	The nonDefaultRule 'LEFSpecialRouteSpec' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] **WARN: (ENCLF-162):	The nonDefaultRule 'VLMDefaultSetup' has been defined, the content will be skipped.
+[12/01 16:48:27    14s] 
+[12/01 16:48:27    14s] Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ...
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ACHCONX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDFHX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDFHX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDFHX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDFHXL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDFX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDFX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDFX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDFXL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDHX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDHX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDHX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'ADDHXL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'AND2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'AND2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'AND2X4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'AND2X6' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'AND2X8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'AND2XL' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (ENCLF-58):	MACRO 'AND3X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-58' for more detail.
+[12/01 16:48:27    14s] **WARN: (EMS-63):	Message <ENCLF-58> has exceeded the default message display limit of 20.
+[12/01 16:48:27    14s] To avoid this warning, increase the display limit per unique message
+[12/01 16:48:27    14s] by using the setMessageLimit <number> command.
+[12/01 16:48:27    14s] The message limit can be removed by using the unsetMessageLimit command.
+[12/01 16:48:27    14s] Note that setting a very large number using the setMessageLimit command
+[12/01 16:48:27    14s] or removing the message limit using the unsetMessageLimit command can
+[12/01 16:48:27    14s] significantly increase the log file size.
+[12/01 16:48:27    14s] To suppress a message, use the suppressMessage command.
+[12/01 16:48:27    14s] 
+[12/01 16:48:27    14s] Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef ...
+[12/01 16:48:27    14s] **WARN: (ENCLF-61):	599 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[12/01 16:48:27    14s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/01 16:48:27    14s] Type 'man ENCLF-61' for more detail.
+[12/01 16:48:27    14s] *** Begin netlist parsing (mem=364.7M) ***
+[12/01 16:48:27    14s] Reading netlist ...
+[12/01 16:48:27    14s] Backslashed names will retain backslash and a trailing blank character.
+[12/01 16:48:27    14s] Reading verilog netlist 'in/fsm_map.v'
+[12/01 16:48:27    14s] 
+[12/01 16:48:27    14s] *** Memory Usage v#1 (Current mem = 364.684M, initial mem = 96.812M) ***
+[12/01 16:48:27    14s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=364.7M) ***
+[12/01 16:48:27    14s] **ERROR: (ENCSYC-300):	Cell fsm_map not found.
+[12/01 16:48:27    14s] **ERROR: (ENCVL-904):	Can't set top cell to "fsm_map" because it does not exist.  Exiting Encounter!
+[12/01 16:48:27    14s] 
+[12/01 16:48:32    14s] *** Memory Usage v#1 (Current mem = 364.684M, initial mem = 96.812M) ***
+[12/01 16:48:32    14s] 
+[12/01 16:48:32    14s] *** Summary of all messages that are not suppressed in this session:
+[12/01 16:48:32    14s] Severity  ID               Count  Summary                                  
+[12/01 16:48:32    14s] WARNING   ENCLF-58          1214  MACRO '%s' has been found in the databas...
+[12/01 16:48:32    14s] WARNING   ENCLF-61             3  %d duplicated MACRO definitions have bee...
+[12/01 16:48:32    14s] WARNING   ENCLF-119           72  LAYER '%s' has been found in the databas...
+[12/01 16:48:32    14s] WARNING   ENCLF-151           32  The viaRule '%s' has been defined, the c...
+[12/01 16:48:32    14s] WARNING   ENCLF-155            6  ViaRule only supports routing/cut layer,...
+[12/01 16:48:32    14s] WARNING   ENCLF-162            4  The nonDefaultRule '%s' has been defined...
+[12/01 16:48:32    14s] WARNING   ENCLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/01 16:48:32    14s] ERROR     ENCLF-223          238  The LEF via '%s' has been defined and fo...
+[12/01 16:48:32    14s] WARNING   ENCSE-100            2  report_message: '-start_cmd/-end_cmd' ca...
+[12/01 16:48:32    14s] ERROR     ENCSYT-16038         2  The specified file '%s' could not be fou...
+[12/01 16:48:32    14s] ERROR     ENCSYC-300           1  Cell %s not found.                       
+[12/01 16:48:32    14s] ERROR     ENCVL-904            1  Can't set top cell to "%s" because it do...
+[12/01 16:48:32    14s] ERROR     ENCIMEX-7008         2  No netlist files are found.  {DETAILMESS...
+[12/01 16:48:32    14s] *** Message Summary: 1334 warning(s), 244 error(s)
+[12/01 16:48:32    14s] 
+[12/01 16:48:32    14s] --- Ending "Encounter" (totcpu=0:00:14.6, real=0:04:16, mem=364.7M) ---
+[12/01 16:48:32    14s] 

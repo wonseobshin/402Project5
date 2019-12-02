@@ -1,0 +1,2793 @@
+Checking out Encounter license ...
+Virtuoso_Digital_Implem 14.1 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+SGN Version : 10.10-p122 (27-Nov-2013) (64 bit executable)
+This Encounter release has been compiled with OA version 22.43-p033.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.13-s036_1 (64bit) 08/14/2014 18:19 (Linux 2.6)
+@(#)CDS: NanoRoute v14.13-s019 NR140805-0429/14_13-UB (database version 2.30, 237.6.1) {superthreading v1.19}
+@(#)CDS: CeltIC v14.13-s013_1 (64bit) 08/14/2014 12:47:36 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.13-s010 (64bit) 08/14/2014 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.13-s011_1 (64bit) Aug 14 2014 10:00:19 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.13-s029
+@(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v14.13-s036_1" on Sun Nov 24 16:36:59 2019 (mem=96.8M) ---
+--- Running on ssh-soc (x86_64 w/Linux 2.6.32-754.12.1.el6.x86_64) ---
+This version was compiled on Thu Aug 14 18:19:25 PDT 2014.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> win
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef}
+<CMD> set init_verilog fsm_map.v
+<CMD> set init_mmmc_file MMMC.tcl
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+
+Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef ...
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PO', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_DIFF', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PSUB', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_PIMP', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NIMP', 
+**WARN: (ENCLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_NWELL', 
+
+Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef ...
+Set DBUPerIGU to M2 pitch 200.
+
+Loading LEF file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ...
+**WARN: (ENCLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-58' for more detail.
+**WARN: (ENCLF-61):	16 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man ENCLF-61' for more detail.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+
+viaInitial starts at Sun Nov 24 16:38:15 2019
+viaInitial ends at Sun Nov 24 16:38:15 2019
+*** Begin netlist parsing (mem=387.2M) ***
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'fsm_map.v'
+
+*** Memory Usage v#1 (Current mem = 388.223M, initial mem = 96.812M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=388.2M) ***
+Top level cell is fsm_final.
+Reading lsMax timing library '/ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CON' of cell 'ACHCONX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFHXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFHXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFX4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDFXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDFXL' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'S' of cell 'ADDHX1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'CO' of cell 'ADDHX2' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+No function defined for cell 'DECAP9'. The cell will only be used for analysis.
+No function defined for cell 'DECAP8'. The cell will only be used for analysis.
+No function defined for cell 'DECAP7'. The cell will only be used for analysis.
+No function defined for cell 'DECAP6'. The cell will only be used for analysis.
+No function defined for cell 'DECAP5'. The cell will only be used for analysis.
+No function defined for cell 'DECAP4'. The cell will only be used for analysis.
+No function defined for cell 'DECAP3'. The cell will only be used for analysis.
+No function defined for cell 'DECAP2'. The cell will only be used for analysis.
+No function defined for cell 'DECAP10'. The cell will only be used for analysis.
+No function defined for cell 'ANTENNA'. The cell will only be used for analysis.
+Read 489 cells in library 'slow_vdd1v0' 
+Reading lsMin timing library '/ubc/ece/data/cmc2/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib' ...
+No function defined for cell 'DECAP9'. The cell will only be used for analysis.
+No function defined for cell 'DECAP8'. The cell will only be used for analysis.
+No function defined for cell 'DECAP7'. The cell will only be used for analysis.
+No function defined for cell 'DECAP6'. The cell will only be used for analysis.
+No function defined for cell 'DECAP5'. The cell will only be used for analysis.
+No function defined for cell 'DECAP4'. The cell will only be used for analysis.
+No function defined for cell 'DECAP3'. The cell will only be used for analysis.
+No function defined for cell 'DECAP2'. The cell will only be used for analysis.
+No function defined for cell 'DECAP10'. The cell will only be used for analysis.
+No function defined for cell 'ANTENNA'. The cell will only be used for analysis.
+Read 489 cells in library 'fast_vdd1v0' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.24min, fe_real=1.38min, fe_mem=439.4M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell fsm_final ...
+*** Netlist is unique.
+** info: there are 1073 modules.
+** info: there are 110 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 447.980M, initial mem = 96.812M) ***
+**WARN: (ENCFP-3961):	The techSite 'CornerSite' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist  in  the LEF library. Check and correct the LEF file.
+**WARN: (ENCFP-3961):	The techSite 'IOSite' has no related cells in LEF library. Cannot make calculations for this site type unless cell models of this type exist  in  the LEF library. Check and correct the LEF file.
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+av_lsMin_rcBest_cmFunc av_lsMax_rcWorst_cmFunc
+av_lsMin_rcBest_cmFunc av_lsMax_rcWorst_cmFunc
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Importing multi-corner technology file(s) for preRoute extraction...
+/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch
+Completed (cpu: 0:00:05.1)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: av_lsMax_rcWorst_cmFunc
+    RC-Corner Name        : rcWorst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch'
+ 
+ Analysis View: av_lsMin_rcBest_cmFunc
+    RC-Corner Name        : rcBest
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1
+    RC-Corner PostRoute Cap Factor        : 1
+    RC-Corner PostRoute XCap Factor       : 1
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1   	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch'
+Technology file '/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch' associated with first view 'av_lsMax_rcWorst_cmFunc' specified to command 'set_analysis_view' will be used as the primary corner for the multi-corner extraction. TQRC/IQRC extraction leverages a single primary corner extraction, then derives the other corners based on their technology files and operating conditions from the primary corner.
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+*Info: initialize multi-corner CTS.
+CTE reading timing constraint file '/ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in/fsm_map.sdc' ...
+Current (total cpu=0:00:20.8, real=0:01:32, peak res=434.4M, current mem=648.4M)
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'fsm' (File /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in/fsm_map.sdc, Line 13).
+
+**ERROR: (TCLCMD-917):	Cannot find 'designs' that match 'fsm' (File /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in/fsm_map.sdc, Line 13).
+
+INFO (CTE): read_dc_script finished with 1 WARNING and 1 ERROR.
+WARNING (CTE-25): Line: 9, 10 of File /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in/fsm_map.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=440.9M, current mem=650.4M)
+Current (total cpu=0:00:20.8, real=0:01:32, peak res=440.9M, current mem=650.4M)
+Total number of combinational cells: 324
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+av_lsMin_rcBest_cmFunc av_lsMax_rcWorst_cmFunc
+av_lsMin_rcBest_cmFunc av_lsMax_rcWorst_cmFunc
+av_lsMin_rcBest_cmFunc av_lsMax_rcWorst_cmFunc
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCLF-58            16  MACRO '%s' has been found in the databas...
+WARNING   ENCLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   ENCLF-155            6  ViaRule only supports routing/cut layer,...
+WARNING   ENCLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   ENCFP-3961           2  The techSite '%s' has no related cells i...
+*** Message Summary: 26 warning(s), 0 error(s)
+
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.956108470786 0.700028 0.0 0.0 0.0 0.0
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> saveDesign fsm_final.enc
+Writing Netlist "fsm_final.enc.dat/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file fsm_final.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=650.6M) ***
+Writing DEF file 'fsm_final.enc.dat/fsm_final.def.gz', current time is Sun Nov 24 16:40:47 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file 'fsm_final.enc.dat/fsm_final.def.gz' is written, current time is Sun Nov 24 16:40:47 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> set sprCreateIeRingNets {}
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingWidth 1.0
+<CMD> set sprCreateIeRingSpacing 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -type core_rings -jog_distance 0.6 -threshold 0.6 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer {bottom Metal1 top Metal1 right Metal2 left Metal2} -width 1 -spacing 0.25 -offset 0.6
+
+**WARN: (ENCPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 650.6M) ***
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1 Metal11 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1 Metal11 } -nets { VDD } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1 Metal11 }
+*** Begin SPECIAL ROUTE on Sun Nov 24 16:42:40 2019 ***
+SPECIAL ROUTE ran on directory: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in
+SPECIAL ROUTE ran on machine: ssh-soc (Linux 2.6.32-754.12.1.el6.x86_64 Xeon 2.19Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 11
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 11
+srouteTopTargetLayerLimit set to 11
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1209.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (ENCSR-4302):	Cap-table is found in the design, so the same information from LEF will be ignored.
+Read in 36 layers, 11 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 583 macros, 29 used
+Read in 29 components
+  29 core components: 29 unplaced, 0 placed, 0 fixed
+Read in 14 logical pins
+Read in 14 nets
+Read in 2 special nets
+1 net selected.
+
+Begin power routing ...
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VDD.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 0  open: 5
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 5
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1211.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 119 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 0.00 megs
+sroute: Total Peak Memory used = 650.62 megs
+<CMD> set sprCreateIeStripeNets {}
+<CMD> set sprCreateIeStripeLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeSpacing 2.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.2 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -stop_x 11.5 -width 0.22 -nets {VDD VSS} -start_x 0.35 -stacked_via_bottom_layer Metal1
+
+**WARN: (ENCPP-193):	The currently specified  spacing 0.2000 in -spacing option might create min enclosed area violation. The required min enclosed area for layer Metal2 is 0.0550. If violation happens, increase the spacing to around 0.2845. The recommended spacing is the square root of min enclosure area.
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+Stripe generation is complete; vias are now being generated.
+The power planner created 2 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 650.6M) ***
+**ERROR: (ENCSYT-16250):	Choose the pin list first.
+**ERROR: (ENCSYT-16269):	Need to specify 'space'.
+<CMD> set ptngSprNoRefreshPins 1
+<CMD> setPtnPinStatus -cell fsm_final -pin card_active -status unplaced -silent
+<CMD> set ptngSprNoRefreshPins 0
+<CMD_INTERNAL> ptnSprRefreshPinsAndBlockages
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 1.0 -start 0.0 0.0 -pin card_active
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 650.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin clk
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 650.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin {{disp[0]} {disp[1]} {disp[2]}}
+Successfully spread [3] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 650.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> editPin -pinWidth 0.08 -pinDepth 0.25 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.38 -start 0.0 0.475 -pin {{disp[0]} {disp[1]} {disp[2]}}
+Successfully spread [3] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 650.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin fund_enough
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 650.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin maintenance
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 650.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin monthly
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 650.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin nfc
+Successfully spread [1] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 650.6M).
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin open
+**ERROR: (ENCPTN-971):	Selected region for spreading the selected [1] pins is not sufficient to spread all the pins. Ensure that the space on the specified region is enough to spread the pins uniformly.
+Selected [1] pin for spreading. Could not spread (1 out of 1) pins because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+
+Following pin is not spread:
+  open
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 650.6M).
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -type core_rings -jog_distance 0.6 -threshold 0.6 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer {bottom Metal1 top Metal1 right Metal2 left Metal2} -width 1 -spacing 0.25 -offset 0.6
+
+**WARN: (ENCPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 650.6M) ***
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.774339622642 0.5 3 3 3 3
+Adjusting Core to Bottom to: 3.0400.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site CoreSite -r 0.682907348243 0.5 3.0 3.04 3.0 3.0
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -type core_rings -jog_distance 0.6 -threshold 0.6 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer {bottom Metal1 top Metal1 right Metal2 left Metal2} -width 1 -spacing 0.25 -offset 0.6
+
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 650.6M) ***
+<CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1 Metal11 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1 Metal11 } -allowLayerChange 1 -nets { VDD VSS } -blockPin useLef -targetViaLayerRange { Metal1 Metal11 }
+*** Begin SPECIAL ROUTE on Sun Nov 24 16:59:56 2019 ***
+SPECIAL ROUTE ran on directory: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in
+SPECIAL ROUTE ran on machine: ssh-soc (Linux 2.6.32-754.12.1.el6.x86_64 Xeon 2.19Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBlockPin set to "useLef"
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectConverterPin set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 11
+srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 11
+srouteTopTargetLayerLimit set to 11
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1214.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (ENCSR-4302):	Cap-table is found in the design, so the same information from LEF will be ignored.
+Read in 36 layers, 11 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 583 macros, 29 used
+Read in 29 components
+  29 core components: 29 unplaced, 0 placed, 0 fixed
+Read in 9 physical pins
+  9 physical pins: 0 unplaced, 9 placed, 0 fixed
+Read in 5 logical pins
+Read in 14 nets
+Read in 2 special nets, 2 routed
+Read in 9 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VDD.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-1253):	Cannot find any standard cell pin connected to net VSS.
+Run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND'.
+**WARN: (ENCSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+**WARN: (ENCSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in LEF file.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in LEF file, or change option to include pin in given range.
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VDD.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+**WARN: (ENCSR-468):	Cannot find any standard cell pin connected to net VSS.
+Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+CPU time for FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 22
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 11
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1217.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 9 io pins ...
+ Updating DB with 121 via definition ...
+
+sroute post-processing starts at Sun Nov 24 16:59:56 2019
+The viaGen is rebuilding shadow vias for net VSS.
+sroute post-processing ends at Sun Nov 24 16:59:56 2019
+
+sroute post-processing starts at Sun Nov 24 16:59:56 2019
+The viaGen is rebuilding shadow vias for net VDD.
+sroute post-processing ends at Sun Nov 24 16:59:56 2019
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 0.00 megs
+sroute: Total Peak Memory used = 650.62 megs
+<CMD> uiSetTool ruler
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.25 -xleft_offset 15 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1 -nets {VDD VSS} -stacked_via_bottom_layer Metal1
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+Stripe generation is complete; vias are now being generated.
+The power planner created 2 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 650.6M) ***
+<CMD> uiSetTool ruler
+<CMD> uiSetTool ruler
+<CMD> uiSetTool ruler
+<CMD> uiSetTool ruler
+<CMD> addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.25 -xleft_offset 12.5 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1 -nets {VDD VSS} -stacked_via_bottom_layer Metal1
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+Stripe generation is complete; vias are now being generated.
+The power planner created 2 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 650.6M) ***
+<CMD> undo
+<CMD> redo
+<CMD> undo
+<CMD> uiSetTool ruler
+<CMD> uiSetTool select
+<CMD> selectWire 18.0000 1.4400 19.0000 21.7400 2 VDD
+<CMD> selectWire 19.2500 0.1900 20.2500 22.9900 2 VSS
+<CMD> deleteSelectedFromFPlan
+<CMD> addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.25 -xleft_offset 12.5 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1 -nets {VDD VSS} -stacked_via_bottom_layer Metal1
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+Stripe generation is complete; vias are now being generated.
+The power planner created 2 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 650.6M) ***
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.19 -pin {card_active clk {disp[0]} {disp[1]} {disp[2]} fund_enough maintenance monthly nfc rst}
+Successfully spread [10] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 650.6M).
+<CMD> selectWire 15.5000 1.4400 16.5000 21.7400 2 VDD
+<CMD> setPinAssignMode -pinEditInBatch false
+<CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 3 -spreadType center -spacing 1.0 -pin {open reduce_bal {sound[0]} {sound[1]}}
+Successfully spread [4] pins.
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 650.6M).
+<CMD> deselectAll
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+<CMD> setNanoRouteMode -quiet -droutePostRouteWidenWireRule LEFSpecialRouteSpec
+**WARN: (ENCTCM-77):	Option "-routeAllowPowerGroundPin" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: (ENCTCM-77):	Option "-routeAllowPowerGroundPin" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setPlaceMode -reset
+<CMD> setPlaceMode -congEffort auto -timingDriven 1 -modulePlan 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -checkPinLayerForAccess {  1 } -preserveRouting 0 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+**WARN: (ENCTCM-77):	Option "-routeAllowPowerGroundPin" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: (ENCTCM-77):	Option "-routeAllowPowerGroundPin" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -inPlaceOpt
+**WARN: the option '-inPlaceOpt' will become obsolete in the next major release. Instead use the following mode  'setOptMode -allEndPoints true' and run regular placeDesign followed by optDesign -preCts. The obsolete option still works in this release, but to avoid this warning and to ensure the compatibility with future relases, update your script to use the recommended setting.
+**WARN: the option '-inPlaceOpt' will become obsolete in the next major release. Instead use the following mode  'setOptMode -allEndPoints true' and run regular placeDesign followed by optDesign -preCts. The obsolete option still works in this release, but to avoid this warning and to ensure the compatibility with future relases, update your script to use the recommended setting.
+*** Starting placeDesign concurrent flow ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (ENCDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.8206 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 671.7M, InitMEM = 671.7M)
+ AAE_INFO: Swapping Delay calculation library interface data to disk.
+*** Memory pool thread-safe mode activated.
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=718.945 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.5  real=0:00:01.0  mem= 718.9M) ***
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+Updating netlist
+
+*summary: 2 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.0) ***
+*** Starting "NanoPlace(TM) placement v#1 (mem=710.9M)" ...
+**WARN: (ENCTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+Type 'man ENCTS-403' for more detail.
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:01.8 mem=710.9M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:02.0 mem=710.9M) ***
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored.
+Define the scan chains before using this option.
+Type 'man ENCSP-9042' for more detail.
+#std cell=108 (0 fixed + 108 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=115 #term=395 #term/net=3.43, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=14
+stdCell: 108 single + 0 double + 0 multi
+Total standard cell length = 0.1244 (mm), area = 0.0002 (mm^2)
+Average module density = 0.550.
+Density for the design = 0.550.
+       = stdcell_area 622 sites (213 um^2) / alloc_area 1130 sites (386 um^2).
+Pin Density = 0.635.
+            = total # of pins 395 / total Instance area 622.
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 3.884e+02 (2.81e+02 1.08e+02)
+              Est.  stn bbox = 4.306e+02 (3.12e+02 1.19e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 708.9M
+Iteration  2: Total net bbox = 3.884e+02 (2.81e+02 1.08e+02)
+              Est.  stn bbox = 4.306e+02 (3.12e+02 1.19e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 708.9M
+Iteration  3: Total net bbox = 2.871e+02 (2.09e+02 7.79e+01)
+              Est.  stn bbox = 3.270e+02 (2.39e+02 8.83e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 708.9M
+Iteration  4: Total net bbox = 9.353e+02 (5.47e+02 3.89e+02)
+              Est.  stn bbox = 1.033e+03 (6.09e+02 4.24e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 708.9M
+Iteration  5: Total net bbox = 1.043e+03 (6.20e+02 4.23e+02)
+              Est.  stn bbox = 1.149e+03 (6.84e+02 4.65e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 708.9M
+Iteration  6: Total net bbox = 1.073e+03 (6.46e+02 4.26e+02)
+              Est.  stn bbox = 1.180e+03 (7.12e+02 4.68e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 708.9M
+*** cost = 1.073e+03 (6.46e+02 4.26e+02) (cpu for global=0:00:00.0) real=0:00:00.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:00.0 real: 0:00:00.0
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+*** Starting refinePlace (0:02:07 mem=679.8M) ***
+Total net length = 1.073e+03 (6.462e+02 4.265e+02) (ext = 3.242e+02)
+Move report: Timing Driven Placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 679.8MB
+Move report: Detail placement moves 108 insts, mean move: 1.02 um, max move: 4.02 um
+	Max move on inst (g4105): (7.72, 4.21) --> (11.20, 4.75)
+	Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 679.8MB
+Summary Report:
+Instances move: 108 (out of 108 movable)
+Mean displacement: 1.02 um
+Max displacement: 4.02 um (Instance: g4105) (7.722, 4.211) -> (11.2, 4.75)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: NAND2X1
+Total net length = 1.097e+03 (6.471e+02 4.495e+02) (ext = 3.298e+02)
+Runtime: CPU: 0:00:00.3 REAL: 0:00:00.0 MEM: 679.8MB
+*** Finished refinePlace (0:02:08 mem=679.8M) ***
+Total net length = 1.098e+03 (6.471e+02 4.513e+02) (ext = 3.300e+02)
+*** End of Placement (cpu=0:00:03.1, real=0:00:03.0, mem=679.8M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 2 )
+Density distribution unevenness ratio = 3.002%
+*** Free Virtual Timing Model ...(mem=679.8M)
+setAnalysisMode  -domain allClockDomain -checkType setup -skew true -usefulSkew false -log true -warn true -caseAnalysis true -sequentialConstProp false -moduleIOCstr true -clockPropagation forcedIdeal -clkSrcPath false -timingSelfLoopsNoSkew false -asyncChecks async -useOutputPinCap true -latch true -latchDelayCalIteration 2 -timeBorrowing true -latchFullDelayCal false -clockGatingCheck true -enableMultipleDriveNet true -analysisType bcWc -cppr false -clkNetsMarking beforeConstProp -honorVirtualPartition false -honorClockDomains false
+GigaOpt running with 1 threads.
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 687.9M, totSessionCpu=0:02:09 **
+Added -handlePreroute to trialRouteMode
+*** optDesign -preCTS ***
+DRC Margin: user margin 0.0; extra margin 0.2
+Setup Target Slack: user slack 0; extra slack 0.1
+Hold Target Slack: user slack 0
+*** Starting trialRoute (mem=685.9M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -handlePreroute -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+
+Phase 1a-1d Overflow: 0.00% H + 0.00% V (0:00:00.0 685.9M)
+
+Overflow: 0.00% H + 0.00% V (0:00:00.0 685.9M)
+
+Phase 1l Overflow: 0.00% H + 0.00% V (0:00:00.0 693.9M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  5:	496	100.00%	496	100.00%
+
+
+Total length: 1.291e+03um, number of vias: 786
+M1(H) length: 1.645e+01um, number of vias: 381
+M2(V) length: 4.434e+02um, number of vias: 328
+M3(H) length: 6.587e+02um, number of vias: 74
+M4(V) length: 1.524e+02um, number of vias: 3
+M5(H) length: 2.040e+01um, number of vias: 0
+M6(V) length: 0.000e+00um, number of vias: 0
+M7(H) length: 0.000e+00um, number of vias: 0
+M8(V) length: 0.000e+00um, number of vias: 0
+M9(H) length: 0.000e+00um, number of vias: 0
+M10(V) length: 0.000e+00um, number of vias: 0
+M11(H) length: 0.000e+00um
+
+Peak Memory Usage was 693.9M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=693.9M) ***
+
+Initializing multi-corner resistance tables ...
+Extraction called for design 'fsm_final' of instances=108 and nets=124 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	Use of command 'setDesignMode -process <process_node>' prior to extraction is recommended for maximum accuracy and optimal automatic threshold setting.
+PreRoute RC Extraction called for design fsm_final.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using QRC technology file ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 693.859M)
+** INFO : this run is activating placeOpt flow focusing on WNS only...
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE. No license checked out.
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 700.9M, InitMEM = 700.9M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=722.453 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 722.5M) ***
+*** Starting optimizing excluded clock nets MEM= 722.5M) ***
+*info: No excluded clock nets to be optimized.
+*** Finished optimizing excluded clock nets (CPU Time= 0:00:00.0  MEM= 722.5M) ***
+Info: 1 clock net  excluded from IPO operation.
+*info: There are 13 candidate Buffer cells
+*info: There are 16 candidate Inverter cells
+
+Netlist preparation processing... 
+Removed 0 instance
+*info: Marking 0 isolation instances dont touch
+*info: Marking 0 level shifter instances dont touch
+**optDesign ... cpu = 0:00:02, real = 0:00:03, mem = 805.0M, totSessionCpu=0:02:11 **
+Begin: GigaOpt high fanout net optimization
+Info: 1 clock net  excluded from IPO operation.
+End: GigaOpt high fanout net optimization
+Begin: GigaOpt DRV Optimization
+Begin: Processing multi-driver nets
+Info: 1 clock net  excluded from IPO operation.
+*** Starting multi-driver net buffering ***
+*summary: 0 non-ignored multi-driver nets.
+*** Finished buffering multi-driver nets (CPU=0:00:00.0, MEM=858.4M) ***
+End: Processing multi-driver nets
+Info: 1 clock net  excluded from IPO operation.
++--------------------------------------------------------------------------------------------------------------------------+
+|      max-tran     |      max-cap      |     max-fanout    |     max-length    |       |         |            |           |
++--------------------------------------------------------------------------------------------------------------------------+
+|  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  WNS  | Density |    Real    |    Mem    |
++--------------------------------------------------------------------------------------------------------------------------+
+|    16   |    48   |     0   |      0  |     0   |     0   |     0   |     0   | 97.69 |  55.04  |            |           |
+|     4   |     8   |     0   |      0  |     0   |     0   |     0   |     0   | 98.04 |  63.27  |   0:00:00.0|     860.5M|
++--------------------------------------------------------------------------------------------------------------------------+
+
+*** Finish DRV Fixing (cpu=0:00:00.1 real=0:00:00.0 mem=860.5M) ***
+
+End: GigaOpt DRV Optimization
+Found active setup analysis view av_lsMax_rcWorst_cmFunc
+Found active hold analysis view av_lsMin_rcBest_cmFunc
+
+------------------------------------------------------------
+            post DRV Summary                             
+------------------------------------------------------------
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| 98.043  |
+|           TNS (ns):|  0.000  |
+|    Violating Paths:|    0    |
+|          All Paths:|   14    |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      1 (1)       |   -0.045   |      1 (2)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 63.274%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:04, real = 0:00:05, mem = 824.4M, totSessionCpu=0:02:13 **
+Begin: GigaOpt Global Optimization
+Info: 1 clock net  excluded from IPO operation.
+*info: 1 clock net excluded
+*info: 2 special nets excluded.
+*info: 9 no-driver nets excluded.
+** GigaOpt Global Opt WNS Slack 0.000  TNS Slack 0.000 
++--------+--------+----------+------------+--------+-----------------------+---------+------------------+
+|  WNS   |  TNS   | Density  |    Real    |  Mem   |      Worst View       |Pathgroup|    End Point     |
++--------+--------+----------+------------+--------+-----------------------+---------+------------------+
+|   0.000|   0.000|    63.27%|   0:00:00.0|  862.5M|av_lsMax_rcWorst_cmFunc|       NA| NA               |
++--------+--------+----------+------------+--------+-----------------------+---------+------------------+
+
+*** Finish pre-CTS Global Setup Fixing (cpu=0:00:00.0 real=0:00:00.0 mem=862.5M) ***
+
+*** Finish pre-CTS Setup Fixing (cpu=0:00:00.0 real=0:00:00.0 mem=862.5M) ***
+** GigaOpt Global Opt End WNS Slack 0.000  TNS Slack 0.000 
+End: GigaOpt Global Optimization
+**optDesign ... cpu = 0:00:06, real = 0:00:06, mem = 822.4M, totSessionCpu=0:02:14 **
+*** Timing Is met
+*** Check timing (0:00:00.0)
+Info: 1 clock net  excluded from IPO operation.
+Begin: Area Reclaim Optimization
+Reclaim Optimization WNS Slack 0.048  TNS Slack 0.000 Density 63.27
++----------+---------+--------+--------+------------+--------+
+| Density  | Commits |  WNS   |  TNS   |    Real    |  Mem   |
++----------+---------+--------+--------+------------+--------+
+|    63.27%|        -|   0.048|   0.000|   0:00:00.0|  862.5M|
+|    63.27%|        0|   0.048|   0.000|   0:00:00.0|  862.5M|
+|    63.27%|        0|   0.048|   0.000|   0:00:00.0|  862.5M|
+|    62.04%|        2|   0.048|   0.000|   0:00:00.0|  862.5M|
+|    62.04%|        0|   0.048|   0.000|   0:00:00.0|  862.5M|
++----------+---------+--------+--------+------------+--------+
+Reclaim Optimization End WNS Slack 0.048  TNS Slack 0.000 Density 62.04
+** Finished Core Area Reclaim Optimization (cpu = 0:00:01.0) (real = 0:00:01.0) **
+Executing incremental physical updates
+Executing incremental physical updates
+** Finished Area Reclaim Optimization (cpu=0:00:01, real=0:00:01, mem=824.36M, totSessionCpu=0:02:15).
+**optDesign ... cpu = 0:00:07, real = 0:00:07, mem = 824.4M, totSessionCpu=0:02:15 **
+**INFO : Launching the early exit mechanism
+Begin: GigaOpt DRV Optimization
+Info: 1 clock net  excluded from IPO operation.
++--------------------------------------------------------------------------------------------------------------------------+
+|      max-tran     |      max-cap      |     max-fanout    |     max-length    |       |         |            |           |
++--------------------------------------------------------------------------------------------------------------------------+
+|  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  WNS  | Density |    Real    |    Mem    |
++--------------------------------------------------------------------------------------------------------------------------+
+|     4   |     8   |     0   |      0  |     0   |     0   |     0   |     0   | 98.04 |  62.04  |            |           |
+|     0   |     0   |     0   |      0  |     0   |     0   |     0   |     0   | 98.04 |  63.54  |   0:00:01.0|     862.5M|
+|     0   |     0   |     0   |      0  |     0   |     0   |     0   |     0   | 98.04 |  63.54  |   0:00:00.0|     862.5M|
++--------------------------------------------------------------------------------------------------------------------------+
+
+*** Finish DRV Fixing (cpu=0:00:00.1 real=0:00:01.0 mem=862.5M) ***
+
+End: GigaOpt DRV Optimization
+Found active setup analysis view av_lsMax_rcWorst_cmFunc
+Found active hold analysis view av_lsMin_rcBest_cmFunc
+
+------------------------------------------------------------
+            post DRV Summary                             
+------------------------------------------------------------
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| 98.040  |
+|           TNS (ns):|  0.000  |
+|    Violating Paths:|    0    |
+|          All Paths:|   14    |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 63.540%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:08, real = 0:00:09, mem = 824.4M, totSessionCpu=0:02:17 **
+*** Timing Is met
+*** Check timing (0:00:00.0)
+Begin: GigaOpt harden opt
+Info: 1 clock net  excluded from IPO operation.
+*info: 1 clock net excluded
+*info: 2 special nets excluded.
+*info: 9 no-driver nets excluded.
+Active Path Group: default 
++--------+---------+--------+---------+----------+------------+--------+-----------------------+---------+------------------+
+|  WNS   | All WNS |  TNS   | All TNS | Density  |    Real    |  Mem   |      Worst View       |Pathgroup|    End Point     |
++--------+---------+--------+---------+----------+------------+--------+-----------------------+---------+------------------+
+|   0.900|   98.040|   0.000|    0.000|    63.54%|   0:00:00.0|  862.5M|av_lsMax_rcWorst_cmFunc|       NA| NA               |
++--------+---------+--------+---------+----------+------------+--------+-----------------------+---------+------------------+
+
+*** Finish pre-CTS Setup Fixing (cpu=0:00:00.0 real=0:00:00.0 mem=862.5M) ***
+End: GigaOpt harden opt
+**optDesign ... cpu = 0:00:08, real = 0:00:09, mem = 822.4M, totSessionCpu=0:02:17 **
+*** Finished optDesign ***
+Removing temporary dont_use automatically set for cells with technology sites with no row.
+*** Starting "NanoPlace(TM) placement v#1 (mem=822.4M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:01.8 mem=814.3M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:02.0 mem=814.3M) ***
+Options: timingDriven clkGateAware pinGuide congEffort=auto gpeffort=medium 
+#std cell=108 (0 fixed + 108 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=115 #term=395 #term/net=3.43, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=14
+stdCell: 108 single + 0 double + 0 multi
+Total standard cell length = 0.1436 (mm), area = 0.0002 (mm^2)
+Average module density = 0.635.
+Density for the design = 0.635.
+       = stdcell_area 718 sites (246 um^2) / alloc_area 1130 sites (386 um^2).
+Pin Density = 0.550.
+            = total # of pins 395 / total Instance area 718.
+Clock gating cells determined by native netlist tracing.
+Iteration  6: Total net bbox = 1.125e+03 (6.73e+02 4.53e+02)
+              Est.  stn bbox = 1.234e+03 (7.39e+02 4.95e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 732.2M
+*** cost = 1.125e+03 (6.73e+02 4.53e+02) (cpu for global=0:00:00.0) real=0:00:00.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:00.0 real: 0:00:00.0
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+*** Starting refinePlace (0:02:20 mem=702.3M) ***
+Total net length = 1.125e+03 (6.726e+02 4.529e+02) (ext = 3.322e+02)
+Move report: Timing Driven Placement moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 702.3MB
+Move report: Detail placement moves 31 insts, mean move: 1.14 um, max move: 3.00 um
+	Max move on inst (g4194): (20.40, 13.30) --> (23.40, 13.30)
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 702.3MB
+Summary Report:
+Instances move: 31 (out of 108 movable)
+Mean displacement: 1.14 um
+Max displacement: 3.00 um (Instance: g4194) (20.4, 13.3) -> (23.4, 13.3)
+	Length: 2 sites, height: 1 rows, site name: CoreSite, cell type: INVX1
+Total net length = 1.124e+03 (6.698e+02 4.544e+02) (ext = 3.313e+02)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 702.3MB
+*** Finished refinePlace (0:02:20 mem=702.3M) ***
+Total net length = 1.121e+03 (6.698e+02 4.517e+02) (ext = 3.324e+02)
+*** End of Placement (cpu=0:00:03.2, real=0:00:03.0, mem=702.3M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 2 )
+Density distribution unevenness ratio = 0.000%
+*** Free Virtual Timing Model ...(mem=702.3M)
+Starting congestion repair ...
+*** Starting trialRoute (mem=702.3M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -handlePreroute -keepMarkedOptRoutes -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+
+Phase 1a-1d Overflow: 0.00% H + 0.00% V (0:00:00.0 702.3M)
+
+Overflow: 0.00% H + 0.00% V (0:00:00.0 702.3M)
+
+Initializing multi-corner resistance tables ...
+Phase 1l Overflow: 0.00% H + 0.00% V (0:00:00.0 717.3M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+--------------------------------------
+  5:	496	100.00%	496	100.00%
+
+
+Total length: 1.324e+03um, number of vias: 792
+M1(H) length: 1.725e+01um, number of vias: 381
+M2(V) length: 4.467e+02um, number of vias: 336
+M3(H) length: 6.959e+02um, number of vias: 72
+M4(V) length: 1.432e+02um, number of vias: 3
+M5(H) length: 2.120e+01um, number of vias: 0
+M6(V) length: 0.000e+00um, number of vias: 0
+M7(H) length: 0.000e+00um, number of vias: 0
+M8(V) length: 0.000e+00um, number of vias: 0
+M9(H) length: 0.000e+00um, number of vias: 0
+M10(V) length: 0.000e+00um, number of vias: 0
+M11(H) length: 0.000e+00um
+
+Peak Memory Usage was 717.3M 
+*** Finished trialRoute (cpu=0:00:00.0 mem=717.3M) ***
+
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+describeCongestion: hCong = 0.00 vCong = 0.00
+Trial Route Overflow 0.000000(H) 0.000000(V).
+Start repairing congestion with level 1.
+Skipped repairing congestion.
+End of congRepair (cpu=0:00:00.1, real=0:00:01.0)
+*** Finishing placeDesign concurrent flow ***
+**placeDesign ... cpu = 0: 0:16, real = 0: 0:18, mem = 709.3M **
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCTS-403            1  Delay calculation was forced to extrapol...
+WARNING   ENCEXT-3530          1  Use of command 'setDesignMode -process <...
+WARNING   ENCDC-1629           1  The default delay limit was set to %d. T...
+WARNING   ENCSP-9025           2  No scan chain specified/traced.          
+WARNING   ENCSP-9042           1  Scan chains were not defined, -ignoreSca...
+*** Message Summary: 6 warning(s), 0 error(s)
+
+<CMD> selectInst {state_reg[2]}
+<CMD> windowSelect 3.453 26.108 26.715 34.528
+<CMD> saveDesign fsm_final.enc
+Writing Netlist "fsm_final.enc.dat.tmp/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file fsm_final.enc.dat.tmp/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=709.5M) ***
+Writing DEF file 'fsm_final.enc.dat.tmp/fsm_final.def.gz', current time is Sun Nov 24 17:21:30 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file 'fsm_final.enc.dat.tmp/fsm_final.def.gz' is written, current time is Sun Nov 24 17:21:30 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> getFillerMode -quiet
+<CMD> addFiller -cell FILL8 FILL64 FILL4 FILL32 FILL2 FILL16 FILL1 -prefix FILLER
+*INFO: Adding fillers to top-module.
+*INFO:   Added 0 filler inst  (cell FILL64 / prefix FILLER).
+*INFO:   Added 0 filler inst  (cell FILL32 / prefix FILLER).
+*INFO:   Added 13 filler insts (cell FILL16 / prefix FILLER).
+*INFO:   Added 16 filler insts (cell FILL8 / prefix FILLER).
+*INFO:   Added 25 filler insts (cell FILL4 / prefix FILLER).
+*INFO:   Added 30 filler insts (cell FILL2 / prefix FILLER).
+*INFO:   Added 36 filler insts (cell FILL1 / prefix FILLER).
+*INFO: Total 120 filler insts added - prefix FILLER (CPU: 0:00:00.1).
+For 120 new insts, *** Applied 0 GNC rules (cpu = 0:00:00.0)
+<CMD> setDesignMode -process 45
+Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQRC, IQRC and QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'medium'.
+<CMD> setDesignMode -flowEffort high
+<CMD> setOptMode -allEndPoints true
+<CMD> changeUseClockNetStatus -noFixedNetWires
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=709.5M) ***
+<CMD> setNanoRouteMode -routeDesignFixClockNets false
+<CMD> setNanoRouteMode -routeConcurrentMinimizeViaCountEffort medium
+<CMD> setNanoRouteMode -drouteUseMultiCutViaEffort high
+<CMD> globalNetConnect VDD -type tiehi
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -override
+<CMD> globalNetConnect VSS -type tielo
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -override
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven true
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven true
+<CMD> routeDesign
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 518.35 (MB), peak = 738.36 (MB)
+#**INFO: setDesignMode -flowEffort high
+#**INFO:  multi-cut via swapping  will be performed after routing.
+#**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+#**INFO: auto set of routeReserveSpaceForMultiCut to true
+#**INFO: honoring user setting for routeConcurrentMinimizeViaCountEffort set to medium
+Begin checking placement ... (start mem=709.5M, init mem=709.5M)
+*info: Placed = 228           
+*info: Unplaced = 0           
+Placement Density:110.62%(428/386)
+Finished checkPlace (cpu: total=0:00:00.1, vio checks=0:00:00.0; mem=709.5M)
+#**INFO: honoring user setting for routeWithTimingDriven set to true
+#**INFO: honoring user setting for routeWithSiDriven set to true
+#WARNING (NRIG-87) Timing file "" not found, resetting timing engine to default for this session.
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=709.5M) ***
+
+globalDetailRoute
+
+#Start globalDetailRoute on Tue Nov 26 20:40:32 2019
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 518.85 (MB), peak = 738.36 (MB)
+#Generating timing graph information, please wait...
+#115 total nets, 0 already routed, 0 will ignore in trialRoute
+Initializing multi-corner resistance tables ...
+#Dump tif for version 2.1
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=725.684 CPU=0:00:00.0 REAL=0:00:00.0)
+#Write timing file took: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 548.18 (MB), peak = 738.36 (MB)
+#Done generating timing graph information.
+#WARNING (NRDB-728) PIN CK in CELL_VIEW SRDFFRQX1 does not have antenna diff area.
+#Start reading timing information from file .timing_file_8206.tif.gz ...
+#Read in timing information for 14 ports, 108 instances from timing file .timing_file_8206.tif.gz.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 558.48 (MB), peak = 738.36 (MB)
+#NanoRoute Version v14.13-s019 NR140805-0429/14_13-UB
+#Start routing data preparation.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.100.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Voltage range [1.100 - 1.100] has 1 net.
+#Voltage range [0.000 - 1.100] has 122 nets.
+# Metal1       H   Track-Pitch = 0.190    Line-2-Via Pitch = 0.130
+# Metal2       V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.150
+# Metal3       H   Track-Pitch = 0.190    Line-2-Via Pitch = 0.150
+# Metal4       V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.150
+# Metal5       H   Track-Pitch = 0.190    Line-2-Via Pitch = 0.150
+# Metal6       V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.150
+# Metal7       H   Track-Pitch = 0.190    Line-2-Via Pitch = 0.150
+# Metal8       V   Track-Pitch = 0.200    Line-2-Via Pitch = 0.150
+# Metal9       H   Track-Pitch = 0.190    Line-2-Via Pitch = 0.150
+# Metal10      V   Track-Pitch = 0.500    Line-2-Via Pitch = 0.420
+# Metal11      H   Track-Pitch = 0.475    Line-2-Via Pitch = 0.430
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal2's pitch = 0.200.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 609.16 (MB), peak = 738.36 (MB)
+#Merging special wires...
+#Using S.M.A.R.T. routing technology.
+#Number of eco nets is 0
+#
+#Start data preparation...
+#
+#Data preparation is done on Tue Nov 26 20:40:36 2019
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Tue Nov 26 20:40:36 2019
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H          94          28          80    45.00%
+#  Metal 2        V         113          42          80     0.00%
+#  Metal 3        H         122           0          80     0.00%
+#  Metal 4        V         155           0          80     0.00%
+#  Metal 5        H         122           0          80     0.00%
+#  Metal 6        V         155           0          80     0.00%
+#  Metal 7        H         122           0          80     0.00%
+#  Metal 8        V         155           0          80     0.00%
+#  Metal 9        H         122           0          80     0.00%
+#  Metal 10       V          61           0          80     0.00%
+#  Metal 11       H          49           0          80     0.00%
+#  --------------------------------------------------------------
+#  Total                   1270       4.55%  880     4.09%
+#
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 609.43 (MB), peak = 738.36 (MB)
+#
+#start global routing iteration 1...
+#
+#setting timing driven routing constraints ...
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 610.04 (MB), peak = 738.36 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 610.04 (MB), peak = 738.36 (MB)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 610.07 (MB), peak = 738.36 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 9 (skipped).
+#Total number of routable nets = 115.
+#Total number of nets in the design = 124.
+#
+#115 routable nets have only global wires.
+#
+#Routed nets constraints summary:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default             115  
+#-----------------------------
+#        Total             115  
+#-----------------------------
+#
+#Routing constraints summary of the whole design:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default             115  
+#-----------------------------
+#        Total             115  
+#-----------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon          
+#                  #Gcell        #Gcell    %Gcell
+#     Layer           (1)           (2)   OverCon
+#  ----------------------------------------------
+#   Metal 1      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 2      1(1.25%)      3(3.75%)   (5.00%)
+#   Metal 3      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 9      0(0.00%)      0(0.00%)   (0.00%)
+#  Metal 10      0(0.00%)      0(0.00%)   (0.00%)
+#  Metal 11      0(0.00%)      0(0.00%)   (0.00%)
+#  ----------------------------------------------
+#     Total      1(0.12%)      3(0.35%)   (0.47%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 2
+#
+#Complete Global Routing.
+#Total wire length = 1248 um.
+#Total half perimeter of net bounding box = 1210 um.
+#Total wire length on LAYER Metal1 = 0 um.
+#Total wire length on LAYER Metal2 = 450 um.
+#Total wire length on LAYER Metal3 = 690 um.
+#Total wire length on LAYER Metal4 = 84 um.
+#Total wire length on LAYER Metal5 = 24 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 627
+#Up-Via Summary (total 627):
+#           
+#-----------------------
+#  Metal 1          368
+#  Metal 2          236
+#  Metal 3           21
+#  Metal 4            2
+#-----------------------
+#                   627 
+#
+#Max overcon = 2 tracks.
+#Total overcon = 0.47%.
+#Worst layer Gcell overcon rate = 0.00%.
+#
+#Start data preparation for track assignment...
+#
+#Data preparation is done on Tue Nov 26 20:40:36 2019
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 610.14 (MB), peak = 738.36 (MB)
+#Start Track Assignment.
+#Done with 21 horizontal wires in 1 hboxes and 19 vertical wires in 1 hboxes.
+#Done with 12 horizontal wires in 1 hboxes and 3 vertical wires in 1 hboxes.
+#Complete Track Assignment.
+#Total wire length = 1177 um.
+#Total half perimeter of net bounding box = 1210 um.
+#Total wire length on LAYER Metal1 = 0 um.
+#Total wire length on LAYER Metal2 = 422 um.
+#Total wire length on LAYER Metal3 = 660 um.
+#Total wire length on LAYER Metal4 = 74 um.
+#Total wire length on LAYER Metal5 = 21 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 627
+#Up-Via Summary (total 627):
+#           
+#-----------------------
+#  Metal 1          368
+#  Metal 2          236
+#  Metal 3           21
+#  Metal 4            2
+#-----------------------
+#                   627 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 577.30 (MB), peak = 738.36 (MB)
+#
+#Cpu time = 00:00:03
+#Elapsed time = 00:00:03
+#Increased memory = 18.80 (MB)
+#Total memory = 577.30 (MB)
+#Peak memory = 738.36 (MB)
+#Using S.M.A.R.T. routing technology.
+#routeSiEffort set to high
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#    number of violations = 2
+#
+#    By Layer and Type :
+#	         EOLSpc    Short   Totals
+#	Metal1        1        1        2
+#	Totals        1        1        2
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 638.98 (MB), peak = 738.36 (MB)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 641.05 (MB), peak = 738.36 (MB)
+#Complete Detail Routing.
+#Total wire length = 1279 um.
+#Total half perimeter of net bounding box = 1210 um.
+#Total wire length on LAYER Metal1 = 36 um.
+#Total wire length on LAYER Metal2 = 376 um.
+#Total wire length on LAYER Metal3 = 604 um.
+#Total wire length on LAYER Metal4 = 214 um.
+#Total wire length on LAYER Metal5 = 48 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 847
+#Total number of multi-cut vias = 756 ( 89.3%)
+#Total number of single cut vias = 91 ( 10.7%)
+#Up-Via Summary (total 847):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1          61 ( 15.4%)       335 ( 84.6%)        396
+#  Metal 2          24 (  6.9%)       323 ( 93.1%)        347
+#  Metal 3           5 (  5.4%)        88 ( 94.6%)         93
+#  Metal 4           1 (  9.1%)        10 ( 90.9%)         11
+#-----------------------------------------------------------
+#                   91 ( 10.7%)       756 ( 89.3%)        847 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = 63.75 (MB)
+#Total memory = 641.06 (MB)
+#Peak memory = 738.36 (MB)
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:00, elapsed time = 00:00:01, memory = 590.13 (MB), peak = 738.36 (MB)
+#
+#Total wire length = 1279 um.
+#Total half perimeter of net bounding box = 1210 um.
+#Total wire length on LAYER Metal1 = 36 um.
+#Total wire length on LAYER Metal2 = 376 um.
+#Total wire length on LAYER Metal3 = 604 um.
+#Total wire length on LAYER Metal4 = 214 um.
+#Total wire length on LAYER Metal5 = 48 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 847
+#Total number of multi-cut vias = 756 ( 89.3%)
+#Total number of single cut vias = 91 ( 10.7%)
+#Up-Via Summary (total 847):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1          61 ( 15.4%)       335 ( 84.6%)        396
+#  Metal 2          24 (  6.9%)       323 ( 93.1%)        347
+#  Metal 3           5 (  5.4%)        88 ( 94.6%)         93
+#  Metal 4           1 (  9.1%)        10 ( 90.9%)         11
+#-----------------------------------------------------------
+#                   91 ( 10.7%)       756 ( 89.3%)        847 
+#
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#
+#Start Post Route wire spreading..
+#
+#Start data preparation for wire spreading...
+#
+#Data preparation is done on Tue Nov 26 20:40:39 2019
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 590.67 (MB), peak = 738.36 (MB)
+#
+#Spread distance (# of tracks): min = 0.500000; max = 2.000000
+#
+#Start Post Route Wire Spread.
+#Done with 35 horizontal wires in 1 hboxes and 20 vertical wires in 1 hboxes.
+#Complete Post Route Wire Spread.
+#
+#Total wire length = 1300 um.
+#Total half perimeter of net bounding box = 1210 um.
+#Total wire length on LAYER Metal1 = 36 um.
+#Total wire length on LAYER Metal2 = 379 um.
+#Total wire length on LAYER Metal3 = 618 um.
+#Total wire length on LAYER Metal4 = 219 um.
+#Total wire length on LAYER Metal5 = 48 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 847
+#Total number of multi-cut vias = 756 ( 89.3%)
+#Total number of single cut vias = 91 ( 10.7%)
+#Up-Via Summary (total 847):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1          61 ( 15.4%)       335 ( 84.6%)        396
+#  Metal 2          24 (  6.9%)       323 ( 93.1%)        347
+#  Metal 3           5 (  5.4%)        88 ( 94.6%)         93
+#  Metal 4           1 (  9.1%)        10 ( 90.9%)         11
+#-----------------------------------------------------------
+#                   91 ( 10.7%)       756 ( 89.3%)        847 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 591.12 (MB), peak = 738.36 (MB)
+#
+#Post Route wire spread is done.
+#Total wire length = 1300 um.
+#Total half perimeter of net bounding box = 1210 um.
+#Total wire length on LAYER Metal1 = 36 um.
+#Total wire length on LAYER Metal2 = 379 um.
+#Total wire length on LAYER Metal3 = 618 um.
+#Total wire length on LAYER Metal4 = 219 um.
+#Total wire length on LAYER Metal5 = 48 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 847
+#Total number of multi-cut vias = 756 ( 89.3%)
+#Total number of single cut vias = 91 ( 10.7%)
+#Up-Via Summary (total 847):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1          61 ( 15.4%)       335 ( 84.6%)        396
+#  Metal 2          24 (  6.9%)       323 ( 93.1%)        347
+#  Metal 3           5 (  5.4%)        88 ( 94.6%)         93
+#  Metal 4           1 (  9.1%)        10 ( 90.9%)         11
+#-----------------------------------------------------------
+#                   91 ( 10.7%)       756 ( 89.3%)        847 
+#
+#
+#Start DRC checking..
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 618.13 (MB), peak = 738.36 (MB)
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 618.13 (MB), peak = 738.36 (MB)
+#CELL_VIEW fsm_final,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#Start Post Route via swapping..
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 618.23 (MB), peak = 738.36 (MB)
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 618.55 (MB), peak = 738.36 (MB)
+#CELL_VIEW fsm_final,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of net violated process antenna rule = 0
+#Post Route via swapping is done.
+#Total wire length = 1300 um.
+#Total half perimeter of net bounding box = 1210 um.
+#Total wire length on LAYER Metal1 = 36 um.
+#Total wire length on LAYER Metal2 = 379 um.
+#Total wire length on LAYER Metal3 = 618 um.
+#Total wire length on LAYER Metal4 = 219 um.
+#Total wire length on LAYER Metal5 = 48 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 847
+#Total number of multi-cut vias = 817 ( 96.5%)
+#Total number of single cut vias = 30 (  3.5%)
+#Up-Via Summary (total 847):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+#  Metal 1          29 (  7.3%)       367 ( 92.7%)        396
+#  Metal 2           1 (  0.3%)       346 ( 99.7%)        347
+#  Metal 3           0 (  0.0%)        93 (100.0%)         93
+#  Metal 4           0 (  0.0%)        11 (100.0%)         11
+#-----------------------------------------------------------
+#                   30 (  3.5%)       817 ( 96.5%)        847 
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:04
+#Elapsed time = 00:00:04
+#Increased memory = 41.26 (MB)
+#Total memory = 618.55 (MB)
+#Peak memory = 738.36 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 618.56 (MB), peak = 738.36 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 618.71 (MB), peak = 738.36 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:08
+#Elapsed time = 00:00:08
+#Increased memory = 100.00 (MB)
+#Total memory = 618.71 (MB)
+#Peak memory = 738.36 (MB)
+#Number of warnings = 1
+#Total number of warnings = 2
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Tue Nov 26 20:40:40 2019
+#
+#WARNING (NRIF-64) When droutePostRouteSwapVia is NOT set to 'false' or 'none', the tool only does post-route via optimization. It will NOT do normal routing.
+#routeDesign: cpu time = 00:00:08, elapsed time = 00:00:08, memory = 618.73 (MB), peak = 738.36 (MB)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+<CMD> verifyGeometry
+ *** Starting Verify Geometry (MEM: 756.0) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 960
+VG: elapsed time: 0.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.3  MEM: 152.8M)
+
+<CMD> setVerifyGeometryMode -area { 0 0 0 0 }
+<CMD> verify_drc -report fsm_final.drc.rpt -limit 1000
+ *** Starting Verify DRC (MEM: 908.7) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Sub-Area : 1 of 1
+  VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:00.1  ELAPSED TIME: 0.00  MEM: 0.1M) ***
+
+<CMD> verifyConnectivity -type all -error 1000 -warning 50
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Tue Nov 26 20:46:46 2019
+
+Design Name: fsm_final
+Database Units: 1000
+Design Boundary: (0.0000, 0.0000) (31.0400, 23.1400)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Tue Nov 26 20:46:46 2019
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.000M)
+
+<CMD> extractRC
+Extraction called for design 'fsm_final' of instances=228 and nets=124 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design fsm_final.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using QRC technology file ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 908.707M)
+<CMD> write_sdf ./out/fsm.sdf
+**ERROR: (TCLCMD-113):	Could not open file './out/fsm.sdf' to write
+
+<CMD> write_sdf ./out/fsm.sdf
+**ERROR: (TCLCMD-113):	Could not open file './out/fsm.sdf' to write
+
+<CMD> write_sdf ./out/encounter_up_counter.sdf
+**ERROR: (TCLCMD-113):	Could not open file './out/encounter_up_counter.sdf' to write
+
+<CMD> write_sdf ../out/fsm.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 45nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Topological Sorting (CPU = 0:00:00.0, MEM = 906.7M, InitMEM = 906.7M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=769.125 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 769.1M) ***
+invalid command name "steamOut"
+<CMD> streamOut ../out/fsm.gds -mapFile ./gds2.map -libName DesignLib -units 1000 -mode ALL
+Parse map file...
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal1) of a VIA object is(are) specified in map file './gds2.map'. A VIA object needs 3 layers (Poly Cont Metal1) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Poly Cont or remove VIA construct(s) from the map file for the following layer(s): Metal1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via1) of a VIAFILL object is(are) specified in map file './gds2.map'. A VIAFILL object needs 3 layers (Metal1 Via1 Metal2) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal1 Metal2 or remove VIAFILL construct(s) from the map file for the following layer(s): Via1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via2) of a VIAFILL object is(are) specified in map file './gds2.map'. A VIAFILL object needs 3 layers (Metal2 Via2 Metal3) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal2 Metal3 or remove VIAFILL construct(s) from the map file for the following layer(s): Via2.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal3) of a VIA object is(are) specified in map file './gds2.map'. A VIA object needs 3 layers (Metal3 Via3 Metal4) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Via3 Metal4 or remove VIA construct(s) from the map file for the following layer(s): Metal3.
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+**WARN: The GDSII cell 'M5_M4_1x2_VH_S' is empty.
+**WARN: The GDSII cell 'M5_M4_1x2_VH_N' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_E' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_W' is empty.
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    127                             COMP
+    108                          DIEAREA
+    7                             Metal1
+    8                               Via1
+    9                             Metal2
+    10                              Via2
+    11                            Metal3
+    17                                PO
+    30                                CO
+    74                                AP
+    85                                RV
+    131                               M1
+    132                               M2
+    133                               M3
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            228
+
+Ports/Pins                            14
+    metal layer Metal3                14
+
+Nets                                 852
+    metal layer Metal1                25
+    metal layer Metal2               410
+    metal layer Metal3               417
+
+    Via Instances                    847
+
+Special Nets                          43
+    metal layer Metal1                37
+    metal layer Metal2                 6
+
+    Via Instances                     45
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                   0
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+**WARN: (ENCOGDS-1176):	There are 4 empty cells. Check encounter.log# for the details.
+  It is probably because your mapping file does not contain corresponding rules.
+  Use default mapping file(without option -mapFile) to output all information of a cell.
+######Streamout is finished!
+<CMD> saveDesign fsm_final.enc
+Writing Netlist "fsm_final.enc.dat.tmp/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file fsm_final.enc.dat.tmp/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=732.1M) ***
+Writing DEF file 'fsm_final.enc.dat.tmp/fsm_final.def.gz', current time is Tue Nov 26 20:57:24 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file 'fsm_final.enc.dat.tmp/fsm_final.def.gz' is written, current time is Tue Nov 26 20:57:24 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> saveDesign ../out/fsm.enc
+Writing Netlist "../out/fsm.enc.dat/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file ../out/fsm.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=732.3M) ***
+Writing DEF file '../out/fsm.enc.dat/fsm_final.def.gz', current time is Tue Nov 26 20:58:41 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file '../out/fsm.enc.dat/fsm_final.def.gz' is written, current time is Tue Nov 26 20:58:41 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/out
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> saveDesign fsm.enc
+Writing Netlist "fsm.enc.dat/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file fsm.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=732.5M) ***
+Writing DEF file 'fsm.enc.dat/fsm_final.def.gz', current time is Tue Nov 26 20:59:39 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file 'fsm.enc.dat/fsm_final.def.gz' is written, current time is Tue Nov 26 20:59:39 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> saveDesign ../out/fsm.enc
+Writing Netlist "../out/fsm.enc.dat.tmp/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file ../out/fsm.enc.dat.tmp/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=732.7M) ***
+Writing DEF file '../out/fsm.enc.dat.tmp/fsm_final.def.gz', current time is Tue Nov 26 20:59:46 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file '../out/fsm.enc.dat.tmp/fsm_final.def.gz' is written, current time is Tue Nov 26 20:59:46 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/out
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> saveDesign ../out/fsm.enc
+Writing Netlist "../out/fsm.enc.dat.tmp/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file ../out/fsm.enc.dat.tmp/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=752.9M) ***
+Writing DEF file '../out/fsm.enc.dat.tmp/fsm_final.def.gz', current time is Tue Nov 26 21:02:05 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file '../out/fsm.enc.dat.tmp/fsm_final.def.gz' is written, current time is Tue Nov 26 21:02:05 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/out
+*** Message Summary: 0 warning(s), 0 error(s)
+
+invalid command name "extrackRC"
+<CMD> extractRC
+Extraction called for design 'fsm_final' of instances=228 and nets=124 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design fsm_final.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using QRC technology file ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 752.941M)
+<CMD> write_sdf ./out/encounter_fsm.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 45nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Topological Sorting (CPU = 0:00:00.0, MEM = 759.5M, InitMEM = 759.5M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=769.066 CPU=0:00:00.3 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:00.4  real=0:00:01.0  mem= 769.1M) ***
+invalid command name "steamOut"
+<CMD> streamOut ./out/fsm.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+Parse map file...
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal1) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Poly Cont Metal1) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Poly Cont or remove VIA construct(s) from the map file for the following layer(s): Metal1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via1) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal1 Via1 Metal2) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal1 Metal2 or remove VIAFILL construct(s) from the map file for the following layer(s): Via1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via2) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal2 Via2 Metal3) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal2 Metal3 or remove VIAFILL construct(s) from the map file for the following layer(s): Via2.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal3) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Metal3 Via3 Metal4) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Via3 Metal4 or remove VIA construct(s) from the map file for the following layer(s): Metal3.
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+**WARN: The GDSII cell 'M5_M4_1x2_VH_S' is empty.
+**WARN: The GDSII cell 'M5_M4_1x2_VH_N' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_E' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_W' is empty.
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    127                             COMP
+    108                          DIEAREA
+    7                             Metal1
+    8                               Via1
+    9                             Metal2
+    10                              Via2
+    11                            Metal3
+    85                                RV
+    74                                AP
+    30                                CO
+    17                                PO
+    133                               M3
+    132                               M2
+    131                               M1
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            228
+
+Ports/Pins                            14
+    metal layer Metal3                14
+
+Nets                                 852
+    metal layer Metal1                25
+    metal layer Metal2               410
+    metal layer Metal3               417
+
+    Via Instances                    847
+
+Special Nets                          43
+    metal layer Metal1                37
+    metal layer Metal2                 6
+
+    Via Instances                     45
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                   0
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+**WARN: (ENCOGDS-1176):	There are 8 empty cells. Check encounter.log# for the details.
+  It is probably because your mapping file does not contain corresponding rules.
+  Use default mapping file(without option -mapFile) to output all information of a cell.
+######Streamout is finished!
+<CMD> write_sdf ./out/fsm.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 45nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Topological Sorting (CPU = 0:00:00.0, MEM = 751.0M, InitMEM = 751.0M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=761.527 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 761.5M) ***
+<CMD> streamOut ./out/fsm.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+Parse map file...
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal1) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Poly Cont Metal1) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Poly Cont or remove VIA construct(s) from the map file for the following layer(s): Metal1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via1) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal1 Via1 Metal2) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal1 Metal2 or remove VIAFILL construct(s) from the map file for the following layer(s): Via1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via2) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal2 Via2 Metal3) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal2 Metal3 or remove VIAFILL construct(s) from the map file for the following layer(s): Via2.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal3) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Metal3 Via3 Metal4) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Via3 Metal4 or remove VIA construct(s) from the map file for the following layer(s): Metal3.
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+**WARN: The GDSII cell 'M5_M4_1x2_VH_S' is empty.
+**WARN: The GDSII cell 'M5_M4_1x2_VH_N' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_E' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_W' is empty.
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    127                             COMP
+    108                          DIEAREA
+    7                             Metal1
+    8                               Via1
+    9                             Metal2
+    10                              Via2
+    11                            Metal3
+    85                                RV
+    74                                AP
+    30                                CO
+    17                                PO
+    133                               M3
+    132                               M2
+    131                               M1
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            228
+
+Ports/Pins                            14
+    metal layer Metal3                14
+
+Nets                                 852
+    metal layer Metal1                25
+    metal layer Metal2               410
+    metal layer Metal3               417
+
+    Via Instances                    847
+
+Special Nets                          43
+    metal layer Metal1                37
+    metal layer Metal2                 6
+
+    Via Instances                     45
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                   0
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+**WARN: (ENCOGDS-1176):	There are 12 empty cells. Check encounter.log# for the details.
+  It is probably because your mapping file does not contain corresponding rules.
+  Use default mapping file(without option -mapFile) to output all information of a cell.
+######Streamout is finished!
+<CMD> streamOut ./out/fsm.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+Parse map file...
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal1) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Poly Cont Metal1) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Poly Cont or remove VIA construct(s) from the map file for the following layer(s): Metal1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via1) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal1 Via1 Metal2) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal1 Metal2 or remove VIAFILL construct(s) from the map file for the following layer(s): Via1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via2) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal2 Via2 Metal3) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal2 Metal3 or remove VIAFILL construct(s) from the map file for the following layer(s): Via2.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal3) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Metal3 Via3 Metal4) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Via3 Metal4 or remove VIA construct(s) from the map file for the following layer(s): Metal3.
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+**WARN: The GDSII cell 'M5_M4_1x2_VH_S' is empty.
+**WARN: The GDSII cell 'M5_M4_1x2_VH_N' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_E' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_W' is empty.
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    127                             COMP
+    108                          DIEAREA
+    7                             Metal1
+    8                               Via1
+    9                             Metal2
+    10                              Via2
+    11                            Metal3
+    85                                RV
+    74                                AP
+    30                                CO
+    17                                PO
+    133                               M3
+    132                               M2
+    131                               M1
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            228
+
+Ports/Pins                            14
+    metal layer Metal3                14
+
+Nets                                 852
+    metal layer Metal1                25
+    metal layer Metal2               410
+    metal layer Metal3               417
+
+    Via Instances                    847
+
+Special Nets                          43
+    metal layer Metal1                37
+    metal layer Metal2                 6
+
+    Via Instances                     45
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                   0
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+**WARN: (ENCOGDS-1176):	There are 16 empty cells. Check encounter.log# for the details.
+  It is probably because your mapping file does not contain corresponding rules.
+  Use default mapping file(without option -mapFile) to output all information of a cell.
+######Streamout is finished!
+<CMD> saveDesign fsm.enc
+Writing Netlist "fsm.enc.dat/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file fsm.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=760.6M) ***
+Writing DEF file 'fsm.enc.dat/fsm_final.def.gz', current time is Tue Nov 26 21:30:00 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file 'fsm.enc.dat/fsm_final.def.gz' is written, current time is Tue Nov 26 21:30:00 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> streamOut ./out/fsm.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+Parse map file...
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal1) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Poly Cont Metal1) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Poly Cont or remove VIA construct(s) from the map file for the following layer(s): Metal1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via1) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal1 Via1 Metal2) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal1 Metal2 or remove VIAFILL construct(s) from the map file for the following layer(s): Via1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via2) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal2 Via2 Metal3) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal2 Metal3 or remove VIAFILL construct(s) from the map file for the following layer(s): Via2.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal3) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Metal3 Via3 Metal4) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Via3 Metal4 or remove VIA construct(s) from the map file for the following layer(s): Metal3.
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+**WARN: The GDSII cell 'M5_M4_1x2_VH_S' is empty.
+**WARN: The GDSII cell 'M5_M4_1x2_VH_N' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_E' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_W' is empty.
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    127                             COMP
+    108                          DIEAREA
+    7                             Metal1
+    8                               Via1
+    9                             Metal2
+    10                              Via2
+    11                            Metal3
+    85                                RV
+    74                                AP
+    30                                CO
+    17                                PO
+    133                               M3
+    132                               M2
+    131                               M1
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            228
+
+Ports/Pins                            14
+    metal layer Metal3                14
+
+Nets                                 852
+    metal layer Metal1                25
+    metal layer Metal2               410
+    metal layer Metal3               417
+
+    Via Instances                    847
+
+Special Nets                          43
+    metal layer Metal1                37
+    metal layer Metal2                 6
+
+    Via Instances                     45
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                   0
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+**WARN: (ENCOGDS-1176):	There are 20 empty cells. Check encounter.log# for the details.
+  It is probably because your mapping file does not contain corresponding rules.
+  Use default mapping file(without option -mapFile) to output all information of a cell.
+######Streamout is finished!
+<CMD> saveDesign ./out/fsm.enc
+Writing Netlist "./out/fsm.enc.dat.tmp/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file ./out/fsm.enc.dat.tmp/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=760.8M) ***
+Writing DEF file './out/fsm.enc.dat.tmp/fsm_final.def.gz', current time is Tue Nov 26 21:32:06 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './out/fsm.enc.dat.tmp/fsm_final.def.gz' is written, current time is Tue Nov 26 21:32:06 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/out
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> extractRC
+Extraction called for design 'fsm_final' of instances=228 and nets=124 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design fsm_final.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using QRC technology file ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 760.848M)
+<CMD> saveNetlist ./out/fsm_final_mapped.v
+Writing Netlist "./out/fsm_final_mapped.v" ...
+<CMD> write_sdf ./out/fsm_final_mapped.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 45nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Topological Sorting (CPU = 0:00:00.0, MEM = 760.9M, InitMEM = 760.9M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=770.434 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.4  real=0:00:00.0  mem= 770.4M) ***
+<CMD> saveDesign ./out/fsm_mapped_final.enc
+Writing Netlist "./out/fsm_mapped_final.enc.dat/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file ./out/fsm_mapped_final.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=739.9M) ***
+Writing DEF file './out/fsm_mapped_final.enc.dat/fsm_final.def.gz', current time is Tue Nov 26 21:42:38 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './out/fsm_mapped_final.enc.dat/fsm_final.def.gz' is written, current time is Tue Nov 26 21:42:38 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/out
+*** Message Summary: 0 warning(s), 0 error(s)
+
+invalid command name "ame"
+<CMD> streamOut ./out/fsm_final_mapped.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+Parse map file...
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal1) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Poly Cont Metal1) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Poly Cont or remove VIA construct(s) from the map file for the following layer(s): Metal1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via1) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal1 Via1 Metal2) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal1 Metal2 or remove VIAFILL construct(s) from the map file for the following layer(s): Via1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via2) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal2 Via2 Metal3) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal2 Metal3 or remove VIAFILL construct(s) from the map file for the following layer(s): Via2.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal3) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Metal3 Via3 Metal4) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Via3 Metal4 or remove VIA construct(s) from the map file for the following layer(s): Metal3.
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+**WARN: The GDSII cell 'M5_M4_1x2_VH_S' is empty.
+**WARN: The GDSII cell 'M5_M4_1x2_VH_N' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_E' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_W' is empty.
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    127                             COMP
+    108                          DIEAREA
+    7                             Metal1
+    8                               Via1
+    9                             Metal2
+    10                              Via2
+    11                            Metal3
+    85                                RV
+    74                                AP
+    30                                CO
+    17                                PO
+    133                               M3
+    132                               M2
+    131                               M1
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            228
+
+Ports/Pins                            14
+    metal layer Metal3                14
+
+Nets                                 852
+    metal layer Metal1                25
+    metal layer Metal2               410
+    metal layer Metal3               417
+
+    Via Instances                    847
+
+Special Nets                          43
+    metal layer Metal1                37
+    metal layer Metal2                 6
+
+    Via Instances                     45
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                   0
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+**WARN: (ENCOGDS-1176):	There are 24 empty cells. Check encounter.log# for the details.
+  It is probably because your mapping file does not contain corresponding rules.
+  Use default mapping file(without option -mapFile) to output all information of a cell.
+######Streamout is finished!
+<CMD> saveDesign out/fsm_final_mapped.enc
+Writing Netlist "out/fsm_final_mapped.enc.dat/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file out/fsm_final_mapped.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=760.1M) ***
+Writing DEF file 'out/fsm_final_mapped.enc.dat/fsm_final.def.gz', current time is Tue Nov 26 21:51:36 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file 'out/fsm_final_mapped.enc.dat/fsm_final.def.gz' is written, current time is Tue Nov 26 21:51:36 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/out
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> streamOut ./out/fsm_final_mapped.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+Parse map file...
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal1) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Poly Cont Metal1) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Poly Cont or remove VIA construct(s) from the map file for the following layer(s): Metal1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via1) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal1 Via1 Metal2) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal1 Metal2 or remove VIAFILL construct(s) from the map file for the following layer(s): Via1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via2) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal2 Via2 Metal3) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal2 Metal3 or remove VIAFILL construct(s) from the map file for the following layer(s): Via2.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal3) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Metal3 Via3 Metal4) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Via3 Metal4 or remove VIA construct(s) from the map file for the following layer(s): Metal3.
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+**WARN: The GDSII cell 'M5_M4_1x2_VH_S' is empty.
+**WARN: The GDSII cell 'M5_M4_1x2_VH_N' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_E' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_W' is empty.
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    127                             COMP
+    108                          DIEAREA
+    7                             Metal1
+    8                               Via1
+    9                             Metal2
+    10                              Via2
+    11                            Metal3
+    85                                RV
+    74                                AP
+    30                                CO
+    17                                PO
+    133                               M3
+    132                               M2
+    131                               M1
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            228
+
+Ports/Pins                            14
+    metal layer Metal3                14
+
+Nets                                 852
+    metal layer Metal1                25
+    metal layer Metal2               410
+    metal layer Metal3               417
+
+    Via Instances                    847
+
+Special Nets                          43
+    metal layer Metal1                37
+    metal layer Metal2                 6
+
+    Via Instances                     45
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                   0
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+**WARN: (ENCOGDS-1176):	There are 28 empty cells. Check encounter.log# for the details.
+  It is probably because your mapping file does not contain corresponding rules.
+  Use default mapping file(without option -mapFile) to output all information of a cell.
+######Streamout is finished!
+<CMD> extractRC
+Extraction called for design 'fsm_final' of instances=228 and nets=124 using extraction engine 'preRoute' .
+PreRoute RC Extraction called for design fsm_final.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using QRC technology file ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 760.215M)
+<CMD> saveNetlist ./out/fsm_map.v
+Writing Netlist "./out/fsm_map.v" ...
+<CMD> write_sdf ./out/fsm_map.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 45nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae signOff=true SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Topological Sorting (CPU = 0:00:00.0, MEM = 761.5M, InitMEM = 761.5M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=771.059 CPU=0:00:00.0 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 771.1M) ***
+<CMD> saveDesign ./out/fsm_map.enc
+Writing Netlist "./out/fsm_map.enc.dat/fsm_final.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file ./out/fsm_map.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=740.3M) ***
+Writing DEF file './out/fsm_map.enc.dat/fsm_final.def.gz', current time is Tue Nov 26 21:58:00 2019 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file './out/fsm_map.enc.dat/fsm_final.def.gz' is written, current time is Tue Nov 26 21:58:00 2019 ...
+Copying timing libraries...
+.
+Copying LEF files...
+...
+Copying Constraints file(s)...
+Modifying View File...
+Updating MMMC files...
+Checking if file contains nested files: fsm_map.sdc
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/out
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> streamOut ./out/fsm_map.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+Parse map file...
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal1) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Poly Cont Metal1) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Poly Cont or remove VIA construct(s) from the map file for the following layer(s): Metal1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via1) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal1 Via1 Metal2) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal1 Metal2 or remove VIAFILL construct(s) from the map file for the following layer(s): Via1.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Via2) of a VIAFILL object is(are) specified in map file './in/gds2.map'. A VIAFILL object needs 3 layers (Metal2 Via2 Metal3) being specified at the same time in the map file. Add VIAFILL contruct(s) to the map file for the following layer(s): Metal2 Metal3 or remove VIAFILL construct(s) from the map file for the following layer(s): Via2.
+**WARN: (ENCOGDS-399):	 Only 1 layer(s) (Metal3) of a VIA object is(are) specified in map file './in/gds2.map'. A VIA object needs 3 layers (Metal3 Via3 Metal4) being specified at the same time in the map file. Add VIA contruct(s) to the map file for the following layer(s): Via3 Metal4 or remove VIA construct(s) from the map file for the following layer(s): Metal3.
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+**WARN: The GDSII cell 'M5_M4_1x2_VH_S' is empty.
+**WARN: The GDSII cell 'M5_M4_1x2_VH_N' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_E' is empty.
+**WARN: The GDSII cell 'M5_M4_2x1_VH_W' is empty.
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    127                             COMP
+    108                          DIEAREA
+    7                             Metal1
+    8                               Via1
+    9                             Metal2
+    10                              Via2
+    11                            Metal3
+    85                                RV
+    74                                AP
+    30                                CO
+    17                                PO
+    133                               M3
+    132                               M2
+    131                               M1
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                            228
+
+Ports/Pins                            14
+    metal layer Metal3                14
+
+Nets                                 852
+    metal layer Metal1                25
+    metal layer Metal2               410
+    metal layer Metal3               417
+
+    Via Instances                    847
+
+Special Nets                          43
+    metal layer Metal1                37
+    metal layer Metal2                 6
+
+    Via Instances                     45
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                   0
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+**WARN: (ENCOGDS-1176):	There are 32 empty cells. Check encounter.log# for the details.
+  It is probably because your mapping file does not contain corresponding rules.
+  Use default mapping file(without option -mapFile) to output all information of a cell.
+######Streamout is finished!
+
+*** Memory Usage v#1 (Current mem = 740.391M, initial mem = 96.812M) ***
+*** Message Summary: 98 warning(s), 3 error(s)
+
+--- Ending "Encounter" (totcpu=7:26:11, real=168:05:05, mem=740.4M) ---

@@ -1,0 +1,184 @@
+#######################################################
+#                                                     
+#  Encounter Command Logging File                     
+#  Created on Sun Nov 24 16:36:59 2019                
+#                                                     
+#######################################################
+
+#@(#)CDS: Encounter v14.13-s036_1 (64bit) 08/14/2014 18:19 (Linux 2.6)
+#@(#)CDS: NanoRoute v14.13-s019 NR140805-0429/14_13-UB (database version 2.30, 237.6.1) {superthreading v1.19}
+#@(#)CDS: CeltIC v14.13-s013_1 (64bit) 08/14/2014 12:47:36 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 14.13-s010 (64bit) 08/14/2014 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 14.13-s011_1 (64bit) Aug 14 2014 10:00:19 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v14.13-s029
+#@(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+set init_gnd_net VSS
+set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef}
+set init_verilog fsm_map.v
+set init_mmmc_file MMMC.tcl
+set init_pwr_net VDD
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.956108470786 0.700028 0.0 0.0 0.0 0.0
+uiSetTool select
+getIoFlowFlag
+fit
+saveDesign fsm_final.enc
+set sprCreateIeRingNets {}
+set sprCreateIeRingLayers {}
+set sprCreateIeRingWidth 1.0
+set sprCreateIeRingSpacing 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -type core_rings -jog_distance 0.6 -threshold 0.6 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer {bottom Metal1 top Metal1 right Metal2 left Metal2} -width 1 -spacing 0.25 -offset 0.6
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1 Metal11 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1 Metal11 } -nets { VDD } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1 Metal11 }
+set sprCreateIeStripeNets {}
+set sprCreateIeStripeLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeSpacing 2.0
+set sprCreateIeStripeThreshold 1.0
+addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.2 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -stop_x 11.5 -width 0.22 -nets {VDD VSS} -start_x 0.35 -stacked_via_bottom_layer Metal1
+set ptngSprNoRefreshPins 1
+setPtnPinStatus -cell fsm_final -pin card_active -status unplaced -silent
+set ptngSprNoRefreshPins 0
+ptnSprRefreshPinsAndBlockages
+setPinAssignMode -pinEditInBatch false
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 1.0 -start 0.0 0.0 -pin card_active
+setPinAssignMode -pinEditInBatch false
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin clk
+setPinAssignMode -pinEditInBatch false
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin {{disp[0]} {disp[1]} {disp[2]}}
+setPinAssignMode -pinEditInBatch false
+editPin -pinWidth 0.08 -pinDepth 0.25 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.38 -start 0.0 0.475 -pin {{disp[0]} {disp[1]} {disp[2]}}
+setPinAssignMode -pinEditInBatch false
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin fund_enough
+setPinAssignMode -pinEditInBatch false
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin maintenance
+setPinAssignMode -pinEditInBatch false
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin monthly
+setPinAssignMode -pinEditInBatch false
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin nfc
+setPinAssignMode -pinEditInBatch false
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 3 -spreadType start -spacing 0.2 -start 0.0 0.0 -pin open
+addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -type core_rings -jog_distance 0.6 -threshold 0.6 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer {bottom Metal1 top Metal1 right Metal2 left Metal2} -width 1 -spacing 0.25 -offset 0.6
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.774339622642 0.5 3 3 3 3
+uiSetTool select
+getIoFlowFlag
+fit
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.682907348243 0.5 3.0 3.04 3.0 3.0
+uiSetTool select
+getIoFlowFlag
+fit
+addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -type core_rings -jog_distance 0.6 -threshold 0.6 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer {bottom Metal1 top Metal1 right Metal2 left Metal2} -width 1 -spacing 0.25 -offset 0.6
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1 Metal11 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1 Metal11 } -allowLayerChange 1 -nets { VDD VSS } -blockPin useLef -targetViaLayerRange { Metal1 Metal11 }
+uiSetTool ruler
+panPage 1 0
+panPage -1 0
+panPage 1 0
+panPage -1 0
+addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.25 -xleft_offset 15 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1 -nets {VDD VSS} -stacked_via_bottom_layer Metal1
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+uiSetTool ruler
+addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.25 -xleft_offset 12.5 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1 -nets {VDD VSS} -stacked_via_bottom_layer Metal1
+undo
+redo
+undo
+uiSetTool ruler
+uiSetTool select
+selectWire 18.0000 1.4400 19.0000 21.7400 2 VDD
+selectWire 19.2500 0.1900 20.2500 22.9900 2 VSS
+deleteSelectedFromFPlan
+addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.25 -xleft_offset 12.5 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1 -nets {VDD VSS} -stacked_via_bottom_layer Metal1
+setPinAssignMode -pinEditInBatch false
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 0.19 -pin {card_active clk {disp[0]} {disp[1]} {disp[2]} fund_enough maintenance monthly nfc rst}
+selectWire 15.5000 1.4400 16.5000 21.7400 2 VDD
+setPinAssignMode -pinEditInBatch false
+editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 3 -spreadType center -spacing 1.0 -pin {open reduce_bal {sound[0]} {sound[1]}}
+deselectAll
+panPage -1 0
+panPage 1 0
+panPage -1 0
+panPage 1 0
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -droutePostRouteWidenWireRule LEFSpecialRouteSpec
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -modulePlan 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -checkPinLayerForAccess {  1 } -preserveRouting 0 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setPlaceMode -fp false
+placeDesign -inPlaceOpt
+selectInst {state_reg[2]}
+windowSelect 3.453 26.108 26.715 34.528
+saveDesign fsm_final.enc
+getFillerMode -quiet
+addFiller -cell FILL8 FILL64 FILL4 FILL32 FILL2 FILL16 FILL1 -prefix FILLER
+setDesignMode -process 45
+setDesignMode -flowEffort high
+setOptMode -allEndPoints true
+changeUseClockNetStatus -noFixedNetWires
+setNanoRouteMode -routeDesignFixClockNets false
+setNanoRouteMode -routeConcurrentMinimizeViaCountEffort medium
+setNanoRouteMode -drouteUseMultiCutViaEffort high
+globalNetConnect VDD -type tiehi
+globalNetConnect VDD -type pgpin -pin VDD -override
+globalNetConnect VSS -type tielo
+globalNetConnect VSS -type pgpin -pin VSS -override
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign
+panPage -1 0
+panPage 1 0
+setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+verifyGeometry
+setVerifyGeometryMode -area { 0 0 0 0 }
+verify_drc -report fsm_final.drc.rpt -limit 1000
+verifyConnectivity -type all -error 1000 -warning 50
+extractRC
+write_sdf ./out/fsm.sdf
+write_sdf ./out/fsm.sdf
+write_sdf ./out/encounter_up_counter.sdf
+write_sdf ../out/fsm.sdf
+streamOut ../out/fsm.gds -mapFile ./gds2.map -libName DesignLib -units 1000 -mode ALL
+saveDesign fsm_final.enc
+saveDesign ../out/fsm.enc
+saveDesign fsm.enc
+saveDesign ../out/fsm.enc
+saveDesign ../out/fsm.enc
+extractRC
+write_sdf ./out/encounter_fsm.sdf
+streamOut ./out/fsm.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+write_sdf ./out/fsm.sdf
+streamOut ./out/fsm.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+streamOut ./out/fsm.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+saveDesign fsm.enc
+streamOut ./out/fsm.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+saveDesign ./out/fsm.enc
+extractRC
+saveNetlist ./out/fsm_final_mapped.v
+write_sdf ./out/fsm_final_mapped.sdf
+saveDesign ./out/fsm_mapped_final.enc
+streamOut ./out/fsm_final_mapped.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+saveDesign out/fsm_final_mapped.enc
+streamOut ./out/fsm_final_mapped.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+extractRC
+saveNetlist ./out/fsm_map.v
+write_sdf ./out/fsm_map.sdf
+saveDesign ./out/fsm_map.enc
+streamOut ./out/fsm_map.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL

@@ -1,0 +1,161 @@
+#######################################################
+#                                                     
+#  Encounter Command Logging File                     
+#  Created on Sun Dec  1 16:54:29 2019                
+#                                                     
+#######################################################
+
+#@(#)CDS: Encounter v14.13-s036_1 (64bit) 08/14/2014 18:19 (Linux 2.6)
+#@(#)CDS: NanoRoute v14.13-s019 NR140805-0429/14_13-UB (database version 2.30, 237.6.1) {superthreading v1.19}
+#@(#)CDS: CeltIC v14.13-s013_1 (64bit) 08/14/2014 12:47:36 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 14.13-s010 (64bit) 08/14/2014 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 14.13-s011_1 (64bit) Aug 14 2014 10:00:19 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v14.13-s029
+#@(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+set init_gnd_net VSS
+set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef}
+set init_verilog in/fsm_map.v
+set init_mmmc_file in/MMMC.tcl
+set init_top_cell fsm_map
+set init_pwr_net VDD
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site CoreSite -r 0.758795562599 0.499887 3 3 3 3
+uiSetTool select
+getIoFlowFlag
+fit
+set sprCreateIeRingNets {}
+set sprCreateIeRingLayers {}
+set sprCreateIeRingWidth 1.0
+set sprCreateIeRingSpacing 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -type core_rings -jog_distance 0.6 -threshold 0.6 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer {bottom Metal1 top Metal1 right Metal2 left Metal2} -width 1 -spacing 0.25 -offset 0.6
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1 Metal11 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1 Metal11 } -nets { VDD VSS } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1 Metal11 }
+addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.2 -xleft_offset 8 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 0.22 -nets {VDD VSS} -stacked_via_bottom_layer Metal1
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -droutePostRouteWidenWireRule LEFSpecialRouteSpec
+setPlaceMode -fp false
+placeDesign -inPlaceOpt
+getFillerMode -quiet
+addFiller -cell FILL1 FILL2 FILL4 FILL8 FILL16 FILL32 FILL64 DECAP2 DECAP3 DECAP4 DECAP5 DECAP6 DECAP7 DECAP8 DECAP9 DECAP10 -prefix FILLER
+setDesignMode -process 45
+setDesignMode -flowEffort high
+setOptMode -allEndPoints true
+changeUseClockNetStatus -noFixedNetWires
+setNanoRouteMode -routeDesignFixClockNets false
+setNanoRouteMode -routeConcurrentMinimizeViaCountEffort medium
+setNanoRouteMode -drouteUseMultiCutViaEffort high
+globalNetConnect VDD -type tiehi
+globalNetConnect VDD -type pgpin -pin VDD -override
+globalNetConnect VSS -type tielo
+globalNetConnect VSS -type pgpin -pin VSS -override
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign
+setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+verifyGeometry -report ./out/encounter.geometry.rpt
+verify_drc -report ./out/encounter.drc.rpt -limit 1000
+extractRC
+saveNetlist ./out/fsm_map.v
+write_sdf ./out/fsm_map.sdf                          
+saveDesign ./out/fsm_map.enc
+streamOut ./out/fsm_map.gds -mapFile ./in/gds2.map -libName DesignLib -units 1000 -mode ALL
+selectWire 11.0000 1.4400 11.2200 21.7400 2 VDD
+deselectAll
+selectWire 1.4000 1.4400 29.6000 2.4400 1 VDD
+deselectAll
+selectWire 11.0000 1.4400 11.2200 21.7400 2 VDD
+selectWire 1.4000 1.4400 29.6000 2.4400 1 VDD
+selectWire 1.4000 1.4400 29.6000 2.4400 1 VDD
+deselectAll
+selectWire 0.1500 0.1900 30.8500 1.1900 1 VSS
+deselectAll
+selectWire 11.4200 0.1900 11.6400 22.9900 2 VSS
+selectWire 11.0000 1.4400 11.2200 21.7400 2 VDD
+deleteSelectedFromFPlan
+uiSetTool ruler
+panPage 1 0
+panPage -1 0
+undo
+uiSetTool move
+editStretch y -5.821 low -no_conn 1
+undo
+uiSetTool select
+deselectAll
+selectWire 11.4200 0.1900 11.6400 22.9900 2 VSS
+selectWire 11.0000 1.4400 11.2200 21.7400 2 VDD
+windowSelect 11.193 2.090 15.026 1.806
+selectWire 11.4200 0.1900 11.6400 22.9900 2 VSS
+selectWire 1.4000 1.4400 29.6000 2.4400 1 VDD
+deselectAll
+selectWire 11.4200 0.1900 11.6400 22.9900 2 VSS
+selectWire 11.0000 1.4400 11.2200 21.7400 2 VDD
+uiSetTool move
+deselectAll
+selectWire 1.4000 1.4400 29.6000 2.4400 1 VDD
+editMove 2.768 -5.608
+undo
+zoomIn
+deselectAll
+selectWire 11.0000 1.4400 11.2200 21.7400 2 VDD
+editMove 2.165 0.0
+undo
+deselectAll
+selectWire 11.4200 0.1900 11.6400 22.9900 2 VSS
+editMove 0.0 -0.036
+undo
+zoomOut
+uiSetTool select
+zoomIn
+deselectAll
+selectWire 11.0000 1.4400 11.2200 21.7400 2 VDD
+selectWire 11.4200 0.1900 11.6400 22.9900 2 VSS
+uiSetTool move
+editMove 4.437 0.0
+deselectAll
+selectVia 11.0000 20.7400 11.2200 21.7400 2 VDD
+uiSetTool select
+selectVia 11.4200 21.9900 11.6400 22.9900 2 VSS
+zoomOut
+zoomIn
+zoomOut
+zoomIn
+zoomOut
+selectWire 1.4000 1.4400 29.6000 2.4400 1 VDD
+deselectAll
+selectVia 11.0000 1.4400 11.2200 2.4400 2 VDD
+selectVia 11.4200 0.1900 11.6400 1.1900 2 VSS
+selectVia 11.0000 20.7400 11.2200 21.7400 2 VDD
+selectVia 11.4200 21.9900 11.6400 22.9900 2 VSS
+uiSetTool move
+zoomIn
+panPage 0 1
+editMove 4.435 -0.003
+editMove -0.031 -0.002
+uiSetTool select
+deselectAll
+selectVia 15.8250 21.9850 16.0450 22.9850 2 VSS
+deselectAll
+selectVia 15.8250 21.9850 16.0450 22.9850 2 VSS
+deselectAll
+zoomOut
+panPage 0 -1
+panPage 0 1
+undo

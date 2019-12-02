@@ -1,0 +1,157 @@
+# PPCMD 1 
+# addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.25 -xleft_offset 12.5 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1 -nets {VDD VSS} -stacked_via_bottom_layer Metal1
+# 9 
+# 2 
+# 1 
+# 0 
+# 0 
+# 2 
+# BOX_LIST 
+# 150 190 29850 21990 0 
+# 1400 1440 28600 20740 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 1000 2 0 16750 28540 0 0 0 
+# VDD 1000 2 0 15500 28540 0 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.25 -xleft_offset 12.5 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1 -nets {VDD VSS} -stacked_via_bottom_layer Metal1
+# 8 
+# 2 
+# 1 
+# 0 
+# 0 
+# 2 
+# BOX_LIST 
+# 150 190 29850 21990 0 
+# 1400 1440 28600 20740 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 1000 2 0 16750 28540 0 0 0 
+# VDD 1000 2 0 15500 28540 0 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.25 -xleft_offset 15 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -width 1 -nets {VDD VSS} -stacked_via_bottom_layer Metal1
+# 7 
+# 2 
+# 1 
+# 0 
+# 0 
+# 2 
+# BOX_LIST 
+# 150 190 29850 21990 0 
+# 1400 1440 28600 20740 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 1000 2 0 19250 28540 0 0 0 
+# VDD 1000 2 0 18000 28540 0 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+
+# PPCMD 4 
+# sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1 Metal11 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1 Metal11 } -allowLayerChange 1 -nets { VDD VSS } -blockPin useLef -targetViaLayerRange { Metal1 Metal11 }
+# 6 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 4 
+
+# PPCMD 5 
+# addRing -skip_via_on_wire_shape Noshape -spacing_bottom 0.25 -width_left 1 -width_bottom 1 -width_top 1 -spacing_top 0.25 -skip_via_on_pin Standardcell -layer_bottom Metal1 -stacked_via_top_layer Metal11 -width_right 1 -type core_rings -jog_distance 0.6 -offset_bottom 0.6 -layer_top Metal1 -threshold 0.6 -offset_left 0.6 -spacing_right 0.25 -spacing_left 0.25 -offset_right 0.6 -offset_top 0.6 -layer_right Metal2 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer_left Metal2
+# 5 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 1000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 15500 690 15500 22490 
+# END_RING_PT_INFO_LIST 
+# VSS 1000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 650 11590 30350 11590 
+# END_RING_PT_INFO_LIST 
+# VDD 1000 1 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 15500 1940 15500 21240 
+# END_RING_PT_INFO_LIST 
+# VDD 1000 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 1900 11590 29100 11590 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 5 
+
+# PPCMD 6 
+# addRing -skip_via_on_wire_shape Noshape -spacing_bottom 0.25 -width_left 1 -width_bottom 1 -width_top 1 -spacing_top 0.25 -skip_via_on_pin Standardcell -layer_bottom Metal1 -stacked_via_top_layer Metal11 -width_right 1 -type core_rings -jog_distance 0.6 -offset_bottom 0.6 -layer_top Metal1 -threshold 0.6 -offset_left 0.6 -spacing_right 0.25 -spacing_left 0.25 -offset_right 0.6 -offset_top 0.6 -layer_right Metal2 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer_left Metal2
+# 4 
+# 32 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 6 
+
+# PPCMD 7 
+# addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit Metal3 -max_same_layer_jog_length 0.44 -padcore_ring_bottom_layer_limit Metal1 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer Metal11 -padcore_ring_top_layer_limit Metal3 -spacing 0.2 -merge_stripes_value 0.6 -layer Metal2 -block_ring_bottom_layer_limit Metal1 -stop_x 11.5 -width 0.22 -nets {VDD VSS} -start_x 0.35 -stacked_via_bottom_layer Metal1
+# 3 
+# 2 
+# 1 
+# 0 
+# 0 
+# 1 
+# BOX_LIST 
+# 0 0 19875 15390 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 220 2 0 770 11610 0 0 0 
+# VDD 220 2 0 350 11610 0 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 7 
+
+# PPCMD 8 
+# sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1 Metal11 } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1 Metal11 } -nets { VDD } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1 Metal11 }
+# 2 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 8 
+
+# PPCMD 9 
+# addRing -skip_via_on_wire_shape Noshape -spacing_bottom 0.25 -width_left 1 -width_bottom 1 -width_top 1 -spacing_top 0.25 -skip_via_on_pin Standardcell -layer_bottom Metal1 -stacked_via_top_layer Metal11 -width_right 1 -type core_rings -jog_distance 0.6 -offset_bottom 0.6 -layer_top Metal1 -threshold 0.6 -offset_left 0.6 -spacing_right 0.25 -spacing_left 0.25 -offset_right 0.6 -offset_top 0.6 -layer_right Metal2 -nets {VDD VSS} -follow core -stacked_via_bottom_layer Metal1 -layer_left Metal2
+# 1 
+# 32 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 9 
+

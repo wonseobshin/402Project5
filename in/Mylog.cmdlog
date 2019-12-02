@@ -1,0 +1,73 @@
+#######################################################
+#                                                     
+#  Encounter Command Logging File                     
+#  Created on Sun Nov 24 16:31:03 2019                
+#                                                     
+#######################################################
+
+#@(#)CDS: Encounter v14.13-s036_1 (64bit) 08/14/2014 18:19 (Linux 2.6)
+#@(#)CDS: NanoRoute v14.13-s019 NR140805-0429/14_13-UB (database version 2.30, 237.6.1) {superthreading v1.19}
+#@(#)CDS: CeltIC v14.13-s013_1 (64bit) 08/14/2014 12:47:36 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 14.13-s010 (64bit) 08/14/2014 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 14.13-s011_1 (64bit) Aug 14 2014 10:00:19 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v14.13-s029
+#@(#)CDS: IQRC/TQRC 13.2.0-s451 (64bit) Tue Jul 22 19:06:40 PDT 2014 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+set init_gnd_net VSS
+set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef}
+set init_verilog fsm_map.v
+set init_mmmc_file MMMC.tcl
+set init_pwr_net VDD
+init_design
+create_library_set -name lsMax \
+   -timing \
+    [list /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v0_basicCells.lib ]
+create_library_set -name lsMin \
+   -timing \
+    [list /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/timing/fast_vdd1v0_basicCells.lib ]
+create_rc_corner -name rcWorst\
+   -qx_tech_file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch \
+   -preRoute_res 1\
+   -postRoute_res 1\
+   -preRoute_cap 1\
+   -postRoute_cap 1\
+   -postRoute_xcap 1\
+   -preRoute_clkres 0\
+   -preRoute_clkcap 0
+create_rc_corner -name rcBest\
+   -qx_tech_file /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch \
+   -preRoute_res 1\
+   -postRoute_res 1\
+   -preRoute_cap 1\
+   -postRoute_cap 1\
+   -postRoute_xcap 1\
+   -preRoute_clkres 0\
+   -preRoute_clkcap 0
+create_delay_corner -name dc_lsMax_rcWorst\
+   -library_set lsMax\
+   -rc_corner   rcWorst
+create_delay_corner -name dc_lsMin_rcBest\
+   -library_set lsMin\
+   -rc_corner   rcBest
+create_constraint_mode -name cmFunc\
+   -sdc_files\
+    [list /ubc/ece/home/ugrads/l/l6w0b/Desktop/Cadence_49820153/PnR/in/fsm_map.sdc]
+create_analysis_view -name av_lsMax_rcWorst_cmFunc -constraint_mode cmFunc -delay_corner dc_lsMax_rcWorst
+create_analysis_view -name av_lsMin_rcBest_cmFunc  -constraint_mode cmFunc -delay_corner dc_lsMin_rcBest
+set_analysis_view -setup [list av_lsMax_rcWorst_cmFunc] -hold [list av_lsMin_rcBest_cmFunc]
+set init_gnd_net VSS
+set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef}
+set init_verilog fsm_map.v
+set init_mmmc_file MMMC.tcl
+set init_pwr_net VDD
+init_design
+set init_gnd_net VSS
+set init_lef_file {/CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /CMC/kits/AMSKIT616_GPDK/tech/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef}
+set init_verilog fsm_map.v
+set init_mmmc_file MMMC.tcl
+set init_pwr_net VDD
+init_design
