@@ -38,7 +38,7 @@ As an extension of Project 1 and 2, we now Place and Route the design as a cell 
 Since in Project 1 we have already connected and tested the design we know the desired outputs. With this knowledge if we make a testbench file on Virtuoso we can run the cell and get waves.
 
 ### Layout
-![layout](https://github.com/wonseobshin/402Project1-Simple-SkyTrain-Gate-FSM/blob/master/wave.JPG)
+![layout](https://github.com/wonseobshin/402Project5/blob/master/cadence_size.JPG)
 
 The some of the input pins have been move to the top of the design in order to simplify and minimize the size.
 
