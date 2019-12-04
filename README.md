@@ -47,4 +47,4 @@ The some of the input pins have been move to the top of the design in order to s
 
 ### Written Answers
 
-See written answers.pdf
+See [written answers.pdf](https://github.com/wonseobshin/402Project5/blob/master/written%20answers.pdf)
