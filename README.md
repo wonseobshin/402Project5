@@ -44,3 +44,7 @@ The some of the input pins have been move to the top of the design in order to s
 
 ### Waves
 ![wave diagram](https://github.com/wonseobshin/402Project1-Simple-SkyTrain-Gate-FSM/blob/master/wave.JPG)
+
+### Written Answers
+
+See written answers.pdf
